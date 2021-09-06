@@ -1,52 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="">
+  <head>
     <meta charset="utf-8">
-    <title>MAJ JENKINS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAJ</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <style> 
+      /* Global */
 
-<body>
+      body {
+        background-color: #8EBADF;
+/*         overflow: hidden; */
+      }
 
-    <div class="content">
-        <header>
-            <h2>MAJ JENKINS.</h2>
-            <h1>ABOUT</h1>
-        </header>
-        
-        <nav>
-            <p><a href="pages/print/print.html">Print Work</a></p>
-            <div class="underbar_1"></div>
-            <p><a href="pages/web/web.html">Web &amp; Interactive Design</a></p>
-            <div class="underbar_2"></div>
-            <p><a href="pages/video/video.html">Video Art</a></p>
-            <div class="underbar_3"></div>
-            <p><a href="pages/about/about.html">About</a></p>
-            <div class="underbar_about"></div>
-        </nav>
+      /*//////////////////////////////////////*/
 
-        <main>
-            <div class="about_img">
-                <img src="pages/about/img/exposure_1.png">
-            </div>
-            <div class="about_img" style="margin: 20% 15% 20% 0%">
-                <img src="pages/about/img/exposure_2.png" style="width: 40%">
-            </div>
-            <div class="about">
-                <p>Maj is a young artist and graphic designer living in San Francisco, CA.</p>
-                <p>They devote themselves to promoting activism within their professional work.</p>
-                <p>Personally, they are preoccupied with themes of human impact on nature and healing from emotional trauma.</p>
-                <p>Maj is agender and uses they/them pronouns.</p>
-            </div>
-        </main>
-        
-        <footer>
-            <div>Maj Jenkins · 2020</div>
-        </footer>
+      /* Scrollbar */
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #8EBADF;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #DDEBF4;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FACD7C;
+      }
+    </style>
+    <script src="lib/p5.js"></script>
+    <script src="lib/p5.sound.js"></script>
+    <script src="lib/p5.play.js"></script>
+    <script src="lib/p5.timer.js"></script>
+    <script src="lib/p5.clickable.js"></script>
+    <link rel="shortcut icon" href="assets/favicon.png">
+  </head>
+  <body>
+    <div id="home_links">
+      <div id="link_column">
+        <p><a href="graphics.html" class="link_column_a">Graphics</a></p>
+      </div>
+      <div id="link_column">
+        <p><a href="interactive.html" class="link_column_a">Interactive</a></p>
+      </div>
+      <div id="link_column">
+        <p><a href="video.html" class="link_column_a">Video</a></p>
+      </div>
+      <div id="link_column">
+        <p><a href="about.html" class="link_column_a">About</a></p>
+      </div>
+      <div id="link_column">
+        <p><a href="#" class="link_column_a">CV</a></p>
+      </div>
     </div>
 
+<!--     <div id="home_world"></div> -->
 
-</body></html>
+<!-- 
+	<div id="fun_world">
+		<script src="js/homepage.js"></script>
+	</div>
+ -->
+	
+	<div id="p5_loading" class="loadingclass"></div>
+
+  </body>
+</html>

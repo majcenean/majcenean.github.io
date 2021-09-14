@@ -152,8 +152,8 @@ nav p:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 90%;
+    justify-content: space-around;
+    max-width: 80%;
 }
 
 .artpiece {
@@ -399,25 +399,31 @@ iframe {
 /* Media Queries */
 
 /*Tablet*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1060px) {
     html {
         font-size: 60%;
     }
     nav {
-        font-size: 150%;
+        display: none;
     }
     .artpiece {
         width: 80%;
         font-size: 150%;
     }
     header {
-        padding-top: 6em;
+        padding-top: 0em;
     }
     header p {
         font-size: 250%;
     }
     .link_column_a {
         font-size: 300%;
+    }
+	#mobile_nav_menu_button {
+    	display: block;
+        margin-top: 3em;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -452,18 +458,16 @@ iframe {
 		font-size: 300%;
         display: none;
     }
+    .container {
+		max-width: 95%;
+		padding-left: 0em;
+	}
     #home_links {
         width:  80%;
         font-size: 300%;
     }
     .link_column_a {
         font-size: 400%;
-    }
-    #mobile_nav_menu_button {
-    	display: block;
-        margin-top: 8em;
-        width: 80px;
-        height: 80px;
     }
     footer {
         font-size: 400%;
@@ -473,7 +477,13 @@ iframe {
         width: 80%;
     }
     .project_images {
-        padding-left: 4em;
+        padding-left: 0em;
+    }
+	#mobile_nav_menu_button {
+    	display: block;
+        margin-top: 3em;
+        width: 80px;
+        height: 80px;
     }
 }
 

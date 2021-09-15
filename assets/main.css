@@ -157,8 +157,8 @@ nav p:hover {
 }
 
 .artpiece {
-    width: 48%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 2000px;
     min-width: 10em;
     padding-bottom: 3em;
     padding-left: 1em;
@@ -209,7 +209,7 @@ img:hover {
 }
 
 .artpiece img {
-    width: 600px;
+    width: 2000px;
 }
 
 

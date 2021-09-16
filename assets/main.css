@@ -528,9 +528,6 @@ iframe {
 }
 
 @media screen and (max-height: 900px) {
-    body {
-        overflow: hidden;
-    }
     #funglasses {
         right: -10%;
         bottom: -10%;

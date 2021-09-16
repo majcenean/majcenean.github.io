@@ -6,10 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-/* Colors and Such */
-/* Light Blue: #8EBADF */
-/* Dark Blue: #507494 */
-
 /* Global Overrides */
 
 html {
@@ -28,8 +24,8 @@ body {
     margin: 0;
 /*    transition: 0.5s;*/
     font-family: 'Work Sans', sans-serif;
-    color: #507494;
-    background-color: whitesmoke;
+    color: #120F0C;
+    background-color: #E7EFE3;
     cursor: crosshair;
     user-select: none;
 }
@@ -248,40 +244,55 @@ img:hover {
     z-index: 10;
     /*Width*/
     width: 10%;
-    left: 10%;
+    left: 5%;
     /*Height*/
-    height: 50%;
-    bottom: 20%;
+    height: 40%;
+    bottom: 10%;
     /*Display*/
     display:  flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-around;
     align-items: left;
-    /*Debug*/
-/*     background-color: blueviolet; */
-/*     opacity: 0.8; */
-}
-
-.link_column {
-    width:  150px;
-    padding:  20px;
-    height:  90%;
 }
 
 .link_column_a {
     text-decoration: none;
-    color:  white;
-    font-size: 9em;
+    color: #393F36;
+    font-size: 3em;
     text-align: left;
-    font-weight: 500;
+    font-weight: 700;
     transition:  0.3s;
 }
 
 .link_column_a:hover {
-    text-shadow: 0 0 25px #DDEBF4;
+    text-shadow: 0 0 25px #393F36;
     letter-spacing: 0.2em;
     font-weight: 100;
+}
+
+#funglasses {
+    position: absolute;
+    z-index: -5;
+    right: 0;
+    bottom: 0;
+    width: 1000px;
+    opacity: 0.95;
+}
+
+#homeheader {
+    position: absolute;
+    z-index: 10;
+    /*Width*/
+    width: 30%;
+    left: 5%;
+    /*Height*/
+    top: 10%;
+    /*Text*/
+    font-size: 8em;
+    text-align: left;
+    font-weight: 100;
+    letter-spacing: 50px;
 }
 
 
@@ -399,16 +410,27 @@ iframe {
 /* Media Queries */
 
 /*Tablet*/
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1200px) {
     html {
         font-size: 60%;
     }
     nav {
         display: none;
     }
+    #homeheader {
+        width: 30%;
+        left: 10%;
+        top: -5%;
+        font-size: 15em;
+    }
     #home_links {
-        width:  80%;
-        font-size: 300%;
+        font-size: 150%;
+        left: 10%;
+        bottom: 30%;
+    }
+    #funglasses {
+        right: -10%;
+        bottom: -5%;
     }
     .artpiece {
         width: 80%;
@@ -439,7 +461,7 @@ iframe {
 
 
 /*Mobile*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
     html {
         font-size: 30%;
     }
@@ -472,9 +494,17 @@ iframe {
 		max-width: 95%;
 		padding-left: 0em;
 	}
+    #homeheader {
+        width: 30%;
+        left: 10%;
+        top: 0%;
+        font-size: 15em;
+    }
     #home_links {
-        width:  80%;
-        font-size: 300%;
+        width: 80%;
+        font-size: 250%;
+        left: 10%;
+        top: 25%;
     }
     .link_column_a {
         font-size: 400%;
@@ -494,6 +524,16 @@ iframe {
         margin-top: 3em;
         width: 80px;
         height: 80px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    body {
+        overflow: hidden;
+    }
+    #funglasses {
+        right: -10%;
+        bottom: -10%;
     }
 }
 

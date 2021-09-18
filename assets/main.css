@@ -1,9 +1,15 @@
 /* Import Typefaces */
-/* Header */
+
+/* Barlow and Space Mono */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Body */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Work Sans*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Fira*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 
 /* Global Overrides */
@@ -23,9 +29,9 @@ body {
     padding: 0;
     margin: 0;
 /*    transition: 0.5s;*/
-    font-family: 'Work Sans', sans-serif;
-    color: #120F0C;
-    background-color: #E7EFE3;
+    font-family: 'Space Mono', sans-serif;
+    color: #ffffff;
+    background-color: #1A1D18;
     cursor: crosshair;
     user-select: none;
 }
@@ -41,6 +47,7 @@ img {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 /*//////////////////////////////////////*/
@@ -109,13 +116,12 @@ header p {
 
 /* Navigation */
 nav {
-/* 	background-color: #8EBADF; */
     z-index: 10;
-    position: absolute;
-    top: -10px;
-    right: 15%;
-    width: 20%;
-    height: 40%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-content: center;
+    border-bottom: white 1px solid;
 }
 
 nav a {
@@ -123,13 +129,12 @@ nav a {
 }
 
 nav p {
-    color: #507494;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.35em;
 	letter-spacing: 0.1875em;
-	padding-bottom: 0.5em;
     transition: 0.2s;
+    padding: 0.5em 1em 0em 1em;
 }
 
 nav p:hover {
@@ -162,7 +167,6 @@ nav p:hover {
 
 /* Font within containers */
 .container h2, h3, p {
-    color: #222;
     text-align: left;
 }
 
@@ -196,8 +200,8 @@ footer p {
 
 img {
 	max-width: 100%;
-    opacity: 0.8; 
-    transition: 0.4s ease;
+    opacity: 0.95; 
+    transition: 0.4s ease-in;
 }
 
 img:hover {
@@ -217,11 +221,12 @@ img:hover {
 	position: absolute;
 	top: 5%;
 	right: 5%;
-	display: none;
-	background-image: url("../assets/icons/hamburger_positive.png");
+    z-index: 20;
+	background-image: url("../assets/icons/hamburger_negative.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    display: none;
 }
 
 
@@ -258,7 +263,6 @@ img:hover {
 
 .link_column_a {
     text-decoration: none;
-    color: #393F36;
     font-size: 3em;
     text-align: left;
     font-weight: 700;
@@ -273,87 +277,43 @@ img:hover {
 
 #funglasses {
     position: absolute;
-    z-index: -5;
     right: 0;
     bottom: 0;
-    width: 1000px;
+    width: 70%;
+    height: 100%;
+    z-index: -5;
     opacity: 0.95;
+    background-image: url("img/home/funglasses.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #homeheader {
     position: absolute;
     z-index: 10;
-    /*Width*/
-    width: 30%;
-    left: 5%;
-    /*Height*/
-    top: 10%;
-    /*Text*/
-    font-size: 8em;
-    text-align: left;
-    font-weight: 100;
-    letter-spacing: 50px;
-}
-
-
-/*
-#home_world {
-    position: absolute;
-    z-index:  0;
-    width:  100%;
-    bottom:  0;
-    height:  300px;
-    background-image: url("../assets/home/earth.png");
+    width: 600px;
+    height: 200px;
+    top: 20%;
+    background-image: url("img/home/type-name.gif");
     background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-color: red;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-*/
-
-/*Iframe if the sketch is fullscreen*/
-/*iframe {
-    display: block;
-    margin: auto;
-    border: none;
-    width: 100%;
-    height: 100%;
-    z-index:  -5;
-    border-radius: 0px;
-    position: absolute;
-}*/
-
-/* 
-iframe {
-	z-index:  -5;
-    display: block;
-    border: none;
-    border-radius: 0px;
-    position: relative;
-    width: 1000px;
-    height: 1000px;
-    margin-right: 100px;
-    background-color: blue;
-}
- */
 
 #p5_loading {
 	color: whitesmoke;
 }
 
-#fun_world {
-    z-index:  -5;
-	position: absolute;
-    width: 100%;
-    height: 100%;
-    /*Debug*/
-    background-color: blueviolet;
-    right: 0%;
-/*     opacity: 0.8; */
-}
-
-#move {
-	right: 0;
+#navlogo {
+    z-index: 10;
+    /*Width*/
+    width: 200px;
+    height: 90px;
+    background-image: url("img/home/type-name.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /**/
@@ -369,7 +329,7 @@ iframe {
 /* INDIVIDUAL PROJECT PAGES ///////////////////////////////////////// */
 
 .project_text {
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding-left: 1em;
     padding-bottom: 1.5em;
     width: 80%;
@@ -382,10 +342,6 @@ iframe {
     transition: 0.2s;
 }
 
-.project_text p:hover {
-    font-weight: 600;
-}
-
 .project_images {
     padding-left: 1em;
     width: 80%;
@@ -393,6 +349,15 @@ iframe {
 
 .project_images img {
     opacity: 1;
+}
+
+.project_title {
+    font-size: 6em;
+}
+
+.project_details {
+    padding-left: -1em;
+    font-size: 1em;
 }
 
 /**/
@@ -411,27 +376,29 @@ iframe {
 
 /*Tablet*/
 @media screen and (max-width: 1200px) {
+/*
     html {
         font-size: 60%;
     }
+*/
     nav {
         display: none;
     }
     #homeheader {
-        width: 30%;
+        width: 50%;
         left: 10%;
-        top: -5%;
-        font-size: 15em;
+        top: 5%;
     }
     #home_links {
         font-size: 150%;
         left: 10%;
-        bottom: 30%;
+        bottom: 20%;
     }
-    #funglasses {
-        right: -10%;
-        bottom: -5%;
-    }
+    .container {
+		max-width: 95%;
+		padding-left: 0em;
+        margin-top: 3em;
+	}
     .artpiece {
         width: 80%;
         font-size: 150%;
@@ -443,16 +410,23 @@ iframe {
         font-size: 250%;
     }
     .link_column_a {
-        font-size: 300%;
+        font-size: 200%;
     }
 	#mobile_nav_menu_button {
     	display: block;
-        margin-top: 3em;
         width: 80px;
         height: 80px;
     }
     .project_text {
-        font-size: 220%;
+        font-size: 130%;
+    }
+    .project_title {
+        font-size: 3em;
+        width: 80%;
+    }
+    .project_details {
+        font-size: 1em;
+        width: 80%;
     }
     footer {
         font-size: 150%;
@@ -461,15 +435,9 @@ iframe {
 
 
 /*Mobile*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 660px) {
     html {
         font-size: 30%;
-    }
-    .artpiece {
-        width: 80%;
-        font-size: 400%;
-        padding-bottom: 5em;
-        padding-left: 2em;
     }
     nav {
         display: none;
@@ -491,12 +459,16 @@ iframe {
         display: none;
     }
     .container {
-		max-width: 95%;
-		padding-left: 0em;
+        margin-top: 7em;
 	}
+    .artpiece {
+        width: 80%;
+        font-size: 400%;
+        padding-bottom: 5em;
+        padding-left: 2em;
+    }
     #homeheader {
-        width: 30%;
-        left: 10%;
+        width: 80%;
         top: 0%;
         font-size: 15em;
     }
@@ -513,24 +485,28 @@ iframe {
         font-size: 400%;
     }
     .project_text {
-        font-size: 5em;
+        font-size: 4em;
         width: 80%;
     }
     .project_images {
         padding-left: 0em;
     }
+    .project_title {
+        font-size: 10em;
+        width: 70%;
+        margin-left: 0.4em;
+    }
+    .project_details {
+        font-size: 4em;
+        width: 70%;
+        margin-left: 1em;
+    }
 	#mobile_nav_menu_button {
     	display: block;
-        margin-top: 3em;
         width: 80px;
         height: 80px;
     }
-}
-
-@media screen and (max-height: 900px) {
     #funglasses {
-        right: -10%;
-        bottom: -10%;
+        width: 100%;
     }
 }
-

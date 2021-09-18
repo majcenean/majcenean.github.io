@@ -5,33 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAJ</title>
     <link rel="stylesheet" href="assets/main.css">
-    <style> 
-      /* Global */
-
-      body {
-        background-color: #E7EFE3;
-/*         overflow: hidden; */
-      }
-
-      /*//////////////////////////////////////*/
-
-      /* Scrollbar */
-
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #8EBADF;
-      }
-
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #DDEBF4;
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #FACD7C;
-      }
-    </style>
 <!--
     <script src="lib/p5.js"></script>
     <script src="lib/p5.sound.js"></script>
@@ -43,7 +16,7 @@
   </head>
   <body>
 <!--      Header-->
-      <h1 id="homeheader">MAJ!</h1>
+      <div id="homeheader"></div>
       
 <!--      Navigation-->
     <div id="home_links">
@@ -65,7 +38,9 @@
     </div>
       
 <!--      Picture-->
-      <img src="assets/img/home/funglasses.png" alt="image of the author" id="funglasses">
+      <div id="funglasses">
+<!--          <img src="assets/img/home/funglasses.png" alt="image of the author">-->
+      </div>
       
 <!--      P5 loading-->
       <!--	<div id="p5_loading" class="loadingclass"></div>-->

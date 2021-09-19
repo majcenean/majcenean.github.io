@@ -54,6 +54,7 @@ a {
     color: white;
 }
 
+
 /*//////////////////////////////////////*/
 
 /* Scrollbar */
@@ -126,8 +127,10 @@ nav {
     background-color: #294F59;
     border-bottom: white 1px solid;
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 nav a {
@@ -137,7 +140,7 @@ nav a {
 nav p {
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 1.35em;
+    font-size: 1.25em;
     letter-spacing: 0.1875em;
     transition: 0.2s;
     padding: 0.5em 1em 0em 1em;
@@ -158,15 +161,16 @@ nav p:hover {
     padding: 1.875em;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .artpiece {
     width: 100%;
-    max-width: 2000px;
+    max-width: 900px;
     min-width: 10em;
     padding-bottom: 3em;
     padding-left: 1em;
@@ -249,6 +253,12 @@ img:hover {
     background-size: contain;
 }
 
+#navlink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /**/
@@ -504,7 +514,7 @@ animation-iteration-count: infinite;
 #about_image {
     position: absolute;
     left: 3em;
-    top: 8em;
+    top: 12em;
     width: 40%;
     height: 85%;
     z-index: -5;
@@ -574,9 +584,9 @@ animation-iteration-count: infinite;
     }
 
     .container {
-        max-width: 95%;
+        max-width: 80%;
         padding-left: 0em;
-        margin-top: 3em;
+        margin-top: 0.8em;
     }
 
     .artpiece {

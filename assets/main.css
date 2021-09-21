@@ -224,6 +224,13 @@ img:hover {
     width: 2000px;
 }
 
+a {
+    text-decoration: underline;
+}
+
+.artpiece a {
+    text-decoration: none;
+}
 
 /* Mobile Nav Menu */
 
@@ -533,6 +540,10 @@ animation-iteration-count: infinite;
     left: 50%;
     top: 8em;
     font-size: 1.5em;
+}
+
+#about_txt p {
+    font-weight: 200;
 }
 
 /**/

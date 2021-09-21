@@ -236,9 +236,9 @@ a {
 
 #mobile_nav_menu {
     width: 100%;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    display: none;
 }
 
 /*Button*/
@@ -624,6 +624,7 @@ animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    cursor: cell;
 }
 
 
@@ -659,6 +660,10 @@ animation-iteration-count: infinite;
 
     nav {
         display: none;
+    }
+    
+    #mobile_nav_menu {
+        display: flex;
     }
 
     #mobile_nav_menu_button {
@@ -775,6 +780,10 @@ animation-iteration-count: infinite;
 
     nav {
         display: none;
+    }
+    
+    #mobile_nav_menu {
+        display: flex;
     }
 
     #mobile_nav_menu_button {

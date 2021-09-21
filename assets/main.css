@@ -234,12 +234,19 @@ a {
 
 /* Mobile Nav Menu */
 
+#mobile_nav_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Button*/
 #mobile_nav_menu_button {
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+/*    position: absolute;*/
+    margin: 20px;
     z-index: 20;
     background-image: url("../assets/icons/hamburger_negative.png");
     background-position: center;
@@ -247,6 +254,26 @@ a {
     background-size: cover;
     display: none;
 }
+
+/*Nav Page*/
+#mobile_navigation_links {
+    font-size: 15em;
+}
+
+#mobile_navigation_links p {
+    padding-left: 1em;
+}
+
+#mobile_navigation_links a {
+    text-decoration: none;
+}
+
+#mobile_navigation_links #navlogo {
+    width: 100%;
+    height: 100px;
+    margin-top: 0.5em;
+}
+
 
 /*Navigation Logo */
 #navlogo {
@@ -558,6 +585,60 @@ animation-iteration-count: infinite;
 
 /* ///////////////////////////////////////////////////// */
 
+/*Footer Buttons*/
+
+#footer_buttons {
+    position: static;
+    width: 98%;
+    font-size: 200%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#footer_click {
+    border: 1px white solid;
+    padding: 0px;
+    width: 100%;
+    height: 1.95em;
+    transition: 0.3s;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+#footer_click p {
+    text-align: center;
+    line-height: 0.5em;
+    transition: 0.3s;
+}
+
+#footer_click a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#footer_click:hover a {
+    animation-name: orange;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/* ///////////////////////////////////////////////////// */
+
 /* Media Queries */
 
 /*Tablet*/
@@ -584,6 +665,7 @@ animation-iteration-count: infinite;
         display: block;
         width: 80px;
         height: 80px;
+        transform: translateY(25px);
     }
 
     .link_column_a {
@@ -697,8 +779,9 @@ animation-iteration-count: infinite;
 
     #mobile_nav_menu_button {
         display: block;
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
+        transform: translateY(25px);
     }
 
     .link_column_a {
@@ -707,6 +790,24 @@ animation-iteration-count: infinite;
 
     footer {
         font-size: 400%;
+    }
+    
+    #footer_buttons {
+        width: 95%;
+        font-size: 800%;
+    }
+    
+    #footer_click {
+        width: 45%;
+    }
+    
+    #footer_click p {
+        line-height: 1em;
+        margin: 0.3em;
+    }
+    
+    #footer_click_next_mobile {
+        padding-top: 0.4em;
     }
 
     .container {

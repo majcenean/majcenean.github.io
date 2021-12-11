@@ -203,6 +203,10 @@ p {
     font-weight: 600;
 }
 
+footer {
+    padding-top: 100px;
+}
+
 footer p {
     text-align: center;
     padding-bottom: 3em;
@@ -503,7 +507,7 @@ animation-iteration-count: infinite;
     font-size: 1.25em;
     padding-left: 1em;
     padding-bottom: 1.5em;
-    width: 80%;
+    width: 1000px;
 }
 
 .project_text p {
@@ -516,16 +520,19 @@ animation-iteration-count: infinite;
 
 .project_images {
     text-align: center;
-    width: 80%;
+    width: 90%;
 }
 
 .project_images img {
     opacity: 1;
+    width: 1000px;
 }
 
 .project_title {
     font-size: 3em;
     text-align: center;
+    width:  70%;
+    margin-left:  15%;
 }
 
 .project_details {
@@ -625,14 +632,17 @@ animation-iteration-count: infinite;
 
 .manifesto_num {
     width: 25%;
+    text-align: left;
 }
 
 .manifesto_point .manifesto_num h1 {
+    text-align: left;
     font-size: 4em;
     line-height: 0em;
 }
 
 .manifesto_point .manifesto_num h2 {
+    text-align: left;
     letter-spacing: 0px;
     text-transform: none;
 }
@@ -647,7 +657,8 @@ animation-iteration-count: infinite;
 
 #footer_buttons {
     position: static;
-    width: 98%;
+    width: 70%;
+    margin-left: 15%;
     font-size: 200%;
     display: flex;
     flex-direction: row;
@@ -735,8 +746,23 @@ animation-iteration-count: infinite;
         font-size: 200%;
     }
 
-    footer {
-        font-size: 150%;
+    #footer_buttons {
+        width:  80%;
+        margin-left: 10%;
+    }
+    
+    #footer_click {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+    
+    #footer_click p {
+        line-height: 1em;
+        margin: 0.3em;
+    }
+    
+    #footer_click_next_mobile {
+        padding-top: 0.4em;
     }
 
     .container {
@@ -746,23 +772,39 @@ animation-iteration-count: infinite;
     }
 
     .artpiece {
-        width: 80%;
+        width: 115%;
         font-size: 150%;
     }
+
+    .artpiece h3, p {
+        line-height: 0.2em;
+    }
+
 
     /*    Individual Pages*/
     .project_text {
         font-size: 130%;
+        margin-left: 10%;
+        width: 100%;
+    }
+
+    .project_images {
+        margin-left: 15%;
+        width: 100%;
     }
 
     .project_title {
         font-size: 3em;
         width: 80%;
+        text-align: left;
+        margin-left: 10%;
     }
 
     .project_details {
         font-size: 1em;
         width: 80%;
+        text-align: left;
+        margin-left: 10%;
     }
 
     /*    Home Page */
@@ -879,16 +921,20 @@ animation-iteration-count: infinite;
     }
 
     footer {
-        font-size: 400%;
+        font-size: 300%;
     }
     
     #footer_buttons {
-        width: 95%;
-        font-size: 800%;
+        width: 80%;
+        margin-left: 5%;
+        flex-direction: column;
+        padding:  5%;
+        font-size: 600%;
     }
     
     #footer_click {
-        width: 45%;
+        width: 100%;
+        margin-bottom: 15px;
     }
     
     #footer_click p {
@@ -905,33 +951,38 @@ animation-iteration-count: infinite;
     }
 
     .artpiece {
-        width: 80%;
+        width: 115%;
         font-size: 400%;
-        padding-bottom: 5em;
-        padding-left: 2em;
+        padding-bottom: 3em;
+        /*padding-left: 2em;*/
+        line-height: auto;
     }
 
     /*    Individual Pages*/
     .project_text {
         font-size: 4em;
-        width: 80%;
+        width: 105%;
+        margin-left: 2.5%;
     }
 
     .project_images {
-        margin-left: 10em;
-        width: 100%;
+        width: 110%;
+        margin-left: 10%;
     }
 
     .project_title {
-        font-size: 10em;
-        width: 70%;
-        margin-left: 0.4em;
+        font-size: 4em;
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
     }
 
     .project_details {
-        font-size: 4em;
-        width: 70%;
-        margin-left: 1em;
+        font-size: 3em;
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
+        line-height: 1em;
     }
 
     /*    Home Page */

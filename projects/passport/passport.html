@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>maj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../new.css">
+    <link rel="shortcut icon" href="../../assets/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>maj jenkins</h1>
+    </header>
+
+    <a href="../../index.html">
+        <div class="back_button">
+            <div class="back_text">
+                <h3>back</h3>
+            </div>
+        </div>
+    </a>
+
+<!-- Image Slider -->
+<div class="slideshow-container">
+      <div class="mySlides">
+        <img src="jenkins_maj_project2_cover_3.png" style="width: 100%">
+        <!-- <div class="text">text 1</div> -->
+      </div>
+<!--         <div class="mySlides">
+        <img src="jenkins_maj_project2_inside_1.png" style="width: 50%">
+      </div> -->
+      <div class="mySlides">
+        <img src="jenkins_maj_project2_inside_2.png" style="width: 100%">
+        <!-- <div class="text">text 2</div> -->
+      </div>
+     <div class="mySlides">
+        <img src="jenkins_maj_project2_inside_3.png" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="jenkins_maj_project2_inside_4.png" style="width: 100%">
+      </div>
+       <div class="mySlides">
+        <img src="jenkins_maj_project2_inside_5.png" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="jenkins_maj_project2_inside_6.png" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="jenkins_maj_project2_inside_7.png" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="jenkins_maj_project2_progress_spreads_1.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="jenkins_maj_project2_progress_spreads_2.jpg" style="width: 100%">
+      </div>
+  <div class="mySlides">
+        <img src="jenkins_maj_project2_progress_cover_1.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="jenkins_maj_project2_progress_cover_2.jpg" style="width: 100%">
+      </div>
+    <div class="mySlides">
+        <img src="jenkins_maj_project2_cover_2.png" style="width: 100%">
+      </div> 
+      <a class="prev" onclick="plusSlides(-1)"><p>&#10094;</p></a>
+      <a class="next" onclick="plusSlides(1)"><p>&#10095;</p></a>
+
+      <div class="dot_container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+    </div>
+</div>
+
+    <br>
+
+
+<div class="project_description">
+    <h2>passport of the united choirs of angels</h2>
+    <p>Fall 2021. | 24-page booklet, 4.921" x 3.465".</p>
+</div>
+
+<div class="project_about">
+    <div class="project_section">
+        <h3>concept</h3>
+        <p>I detourned an illustrated 1960s catalogue of North Eastern American seabirds to create a graphic booklet addressing the harrowing journeys, experiences, and injustices presently faced by Mexican immigrants at the southern United States border.
+        <br><br>
+        The visual narrative I developed positions angels and saints watching and guiding the travels of immigrants crossing over to the United States. As guardians and witnesses to present-day struggles of immigration, they provide protection, question cruelty, and mourn injustice. Since all visuals in the booklet are detourned from seabirds, many of which are specialized to fly great distances in difficult weather conditions, a parallel is created between the witnesses and the actors of the journey.
+        <br><br>
+        By highlighting the tragedies of nation-state violence and the hostility of the landscape, this booklet is a critique of the struggles endured by immigrants at the southern United States border and a call to action for immigration reform and the abolishing of borders.</p>
+    </div>
+    <div class="project_section">
+        <h3>process</h3>
+        <p>Bound in a navy blue cover foiled with gold leaf intended to resemble that of an American passport, it is an accompanying text to those in transit, symbolic of extending protection. The cover required me to employ late-night hours in the interest of self-teaching how to use a Cricut machine to foil. When I finished making the covers, I sealed the covers with a sealant spray finish to protect the foil from flaking.</p>
+    </div>
+    <div class="project_section">
+        <h3>result</h3>
+        <p>Three copies of this booklet were produced, two with gold-foiled covers and one with a silver-foiled cover. One resides in the collection of the <a href="https://prelingerlibrary.org/home/" target="_blank">Prelinger Library</a>, an appropriation-friendly privately-funded public library located in San Francisco.</p>
+    </div>
+</div>
+
+<br>
+
+<div class="project_video" style="position:relative;">
+    <img src="jenkins_maj_project2_inside_1.png" style="width: 100%">
+</div>
+
+<!-- Javascript -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+
+    
+<footer>
+    <p>Maj Jenkins 2022. Do not reuse without permission.</p>
+</footer>
+
+</body>
+</html>

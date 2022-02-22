@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>maj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../new.css">
+    <link rel="shortcut icon" href="../../assets/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>maj jenkins</h1>
+    </header>
+
+    <a href="../../index.html">
+        <div class="back_button">
+            <div class="back_text">
+                <h3>back</h3>
+            </div>
+        </div>
+    </a>
+
+<!-- Image Slider -->
+<div class="slideshow-container">
+      <div class="mySlides">
+        <img src="goodluck_0.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="goodluck_1.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="goodluck_2.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="goodluck_3.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="goodluck_4.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="goodluck_5.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="goodluck_6.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="goodluck_8.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="goodluck_9.jpg" style="width: 100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)"><p>&#10094;</p></a>
+      <a class="next" onclick="plusSlides(1)"><p>&#10095;</p></a>
+
+      <div class="dot_container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+</div>
+
+    <br>
+
+
+<div class="project_description">
+    <h2>good luck</h2>
+    <p>Fall 2021. | Concept art, packaging design.</p>
+</div>
+
+<div class="project_about">
+    <div class="project_section">
+        <h3>concept</h3>
+        <p>This project explores obsessive-compulsive tendencies I developed as a child. I kept this bell by my bed, making sure to ring it precisely three times before I went to sleep each night, a fear weighing on my back that if I refused or forgot to do so, my parents would be killed gruesomely during the night by intruders or demons, and the fault of the deaths would be mine.
+            <br><br>By combining the ornate and beautiful shiny trinket with the horrific and guilt-inducing obsession, this illustrates the world of a child exploring unknown powers, magic, and mysticism. Drawing upon these themes, the identity of this project is strange and otherworldly, imaginative and influenced by fortune, luck, and spirituality.</p>
+    </div>
+    <div class="project_section">
+        <h3>project</h3>
+        <p>The bell, the source of my obsession, is encased in plastic, invoking the imagery of a fortune-telling crystal ball. It is fitted within a rich mahogany-textured package. The bottom is hollow to allow for LED lights to illuminate the bell in a haunting manner. The bell package is surrounded by smaller "scrolls" - contracts and words of binding that allow others to engage in the same obsession I developed.</p>
+    </div>
+</div>
+
+<br>
+
+<div class="project_video" style="position:relative;">
+    <img src="branddeck_1.png" style="width: 100%">
+    <img src="branddeck_2.png" style="width: 100%">
+    <img src="branddeck_3.png" style="width: 100%">
+    <img src="branddeck_4.png" style="width: 100%">
+    <img src="dieline_1.jpg" style="width: 100%">
+    <img src="dieline_2.jpg" style="width: 100%">
+    <img src="dieline_3.jpg" style="width: 100%">
+    <img src="dieline_4.jpg" style="width: 100%">
+</div>
+
+
+<!-- Javascript -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+
+    
+<footer>
+    <p>Maj Jenkins 2022. Do not reuse without permission.</p>
+</footer>
+
+</body>
+</html>

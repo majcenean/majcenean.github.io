@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>maj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../new.css">
+    <link rel="shortcut icon" href="../../assets/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>maj jenkins</h1>
+    </header>
+
+    <a href="../../index.html">
+        <div class="back_button">
+            <div class="back_text">
+                <h3>back</h3>
+            </div>
+        </div>
+    </a>
+
+<div class="project_description">
+    <p>multimedia artist/graphic designer
+        <br>majrosejenkins@gmail.com
+        <br>www.linkedin.com/in/majcenean/
+        <br>www.majs.space/
+    </p>
+</div>
+
+<div class="project_about">
+    <h3>education</h3>
+    <div class="project_section">
+        <div class="cv_text">
+            <table>
+              <tr>
+                <td class="cv_text_year">2022</td>
+                <td class="cv_text_details">Bachelor of Arts in Design at the University of San Francisco
+                    <br>Minor in Classical Studies&emsp;|&emsp;3.99 GPA
+                </td>
+              </tr>
+            </table>
+        </div>
+    </div>
+
+    <h3>grants and awards</h3>
+    <div class="project_section">
+        <div class="cv_text">
+            <table>
+            <tr>
+                <td class="cv_text_year">2018-22</td>
+                <td class="cv_text_details">Print and Graphics Scholarship Foundation</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2018-22</td>
+                <td class="cv_text_details">Tang Scholarship</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2018</td>
+                <td class="cv_text_details">The Association for Chinese Teachers (TACT) Scholarship</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2018</td>
+                <td class="cv_text_details">Ruth Adams Cup</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2018</td>
+                <td class="cv_text_details">Urban Youth Lead Scholarship <i>in memory of Johnisha Tucker</i></td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <h3>design experience</h3>
+    <div class="project_section">
+        <div class="cv_text">
+            <table>
+            <tr>
+                <td class="cv_text_year">2022</td>
+                <td class="cv_text_details">Metro Film and Arts Foundation</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2019-22</td>
+                <td class="cv_text_details">Leo T. McCarthy Center for Public Service and the Common Good</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2021</td>
+                <td class="cv_text_details">Bernal Heights Outdoor Cinema</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2017</td>
+                <td class="cv_text_details">Root Division</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2016</td>
+                <td class="cv_text_details">Youth Art Exchange</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2015</td>
+                <td class="cv_text_details">The Imagine Bus Project</i></td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <h3>activism</h3>
+    <div class="project_section">
+        <div class="cv_text">
+        <table>
+            <tr>
+                <td class="cv_text_year">2015-18</td>
+                <td class="cv_text_details">GSA Network</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2018</td>
+                <td class="cv_text_details">LYRIC Center for LGBTQQ+ Youth</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+    <h3>exhibitions</h3>
+    <div class="project_section">
+        <div class="cv_text">
+        <table>
+            <tr>
+                <td class="cv_text_year">2021</td>
+                <td class="cv_text_details">Copy Culture Print Shop</td>
+            </tr>
+            <tr>
+                <td class="cv_text_year">2016</td>
+                <td class="cv_text_details">Spotlight on the Arts</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+    <h3>works and projects</h3>
+    <div class="project_section">
+        <div class="cv_text">
+        <table>
+            <tr>
+                <td class="cv_text_year">2019</td>
+                <td class="cv_text_details">ARTS at USF Promotional Video for Arts + Architecture Department</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- Javascript -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    
+<footer>
+    <p>Maj Jenkins 2022. Do not reuse without permission.</p>
+</footer>
+
+</body>
+</html>

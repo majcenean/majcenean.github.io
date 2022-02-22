@@ -3,64 +3,156 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAJ</title>
-    <link rel="stylesheet" href="assets/main.css">
-    <!--
-    <script src="lib/p5.js"></script>
-    <script src="lib/p5.sound.js"></script>
-    <script src="lib/p5.play.js"></script>
-    <script src="lib/p5.timer.js"></script>
-    <script src="lib/p5.clickable.js"></script>
--->
-    <link rel="shortcut icon" href="assets/favicon.png">
-</head>
+    <title>maj</title>
+    <style> 
+    	/*Archivo*/
+    	@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');;
 
-<body>
-    <!--      Header-->
-    <!--      <div id="homeheader"></div>-->
+		html {
+			box-sizing: border-box;
+		}
 
-    <!--      Navigation-->
-    <!--
-    <div id="home_links">
-      <div id="link_column">
-        <p><a href="graphics.html" class="link_column_a">Graphics</a></p>
-      </div>
-      <div id="link_column">
-        <p><a href="interactive.html" class="link_column_a">Games</a></p>
-      </div>
-      <div id="link_column">
-        <p><a href="video.html" class="link_column_a">Video</a></p>
-      </div>
-      <div id="link_column">
-        <p><a href="about.html" class="link_column_a">About</a></p>
-      </div>
-      <div id="link_column">
-        <p><a href="cv.html" class="link_column_a">CV</a></p>
-      </div>
+		*, *:before; *:after; {
+			box-sizing: inherit;
+		}
+
+		body {
+			padding: 0; 
+			margin: 0;
+			text-align: left;
+			background-color: #e0e0e0;
+			user-select: none;
+			font-family: 'Archivo', sans-serif;
+			color: #000000;
+		}
+
+		p {
+			font-size: 18px;
+		}
+
+		p, h1, h2, h3, h4, h5 {
+			font-family: 'Archivo', sans-serif;
+		}
+
+		h1, h2, h3, h4, h5 {
+			font-family: 'Archivo', sans-serif;
+		}
+
+		iframe {
+			display: block;
+			margin: auto;
+			border: none;
+			border-radius: 0px;
+			position: absolute;
+			width: 1366px;
+			height: 768px;
+			font-family: 'Archivo', sans-serif;
+		}
+
+		header {
+			display: block;
+			margin: auto;
+			text-align: left;
+			width: 1366px;
+			height: 90px;
+		}
+
+		nav {
+			width: 450px;
+			height: 100px;
+			position: absolute;
+			top: 0%;
+			right: 5%;
+			opacity: 50%;
+			transition: 0.2s;
+		}
+
+		nav:hover {
+			opacity: 95%;
+		}
+
+		#container_img {
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-end;
+			margin-top: 15px;
+		}
+
+		#container_img img {
+			width: 60px;
+			height: 60px;
+		}
+
+		#container_p {
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-end;
+			margin-top: -25px;
+		}
+
+		#container_p p {
+			width: 90px;
+			height: 10px;
+		}
+
+		#frame {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -10;
+		}
+
+		#p5_loading {
+	    color: #e0e0e0;
+		}
+
+		.sketch_full {
+			visibility: visible;
+			display: block;
+		}
+
+		@media screen and (max-width: 760px) {
+			.sketch_full {
+				visibility: hidden;
+				display: none;
+			}
+		}
+    </style>
+    <script src="assets/lib/p5.js"></script>
+    <!-- <script src="assets/lib/p5.sound.js"></script> -->
+    <!-- <script src="assets/lib/p5.play.js"></script> -->
+    <!-- <script src="assets/lib/p5.timer.js"></script> -->
+    <!-- <script src="assets/lib/p5.clickable.js"></script> -->
+    <!-- <script src="assets/lib/p5.2DAdventure.js"></script> -->
+    <link rel="shortcut icon" href="assets/favicon.png" />
+  </head>
+  <body>
+  	    <div id="frame">
+  	    	<!-- <img src="assets/frame.png" alt="decorative frame" draggable="false" style="display:inline; position: static; margin-top: 75px;"> -->
+  	    </div>
+
+		<div  class="sketch_full">
+    	<script src="homepage.js"></script>
     </div>
--->
 
-    <div id="homeabout">
-        <p>
-            <span id="about_maj">Hi there, I'm <span id="about_majname">Maj.</span></span>
-            <br><br>
-            <span id="about_desc">I'm an artist, designer, and all-around creative weirdo that spends my time looking at birds and working on nifty projects here in san francisco, california.</span>
-            <br><br>
-            <!-- <span id="about_know">See what I have to share:</span> -->
-        </p>
-        <a href="graphics.html">
-            <div id="about_button">
-                <div id="about_button_container"></div>
-                <p>see my work</p>
-            </div>
-        </a>
+    	<header>
+    		<!-- <h1>maj jenkins</h1> -->
+    	</header>
+
+    	<nav>
+<!--     		<div id="container_img">
+	    		<img src="assets/favicon.png" alt="key 1" draggable="false">
+	    		<img src="assets/favicon.png" alt="key 2" draggable="false">
+	    		<img src="assets/favicon.png" alt="key 3" draggable="false">
+    		</div>
+    		<div id="container_p">
+	    		<p>move</p>
+	    		<p>sprint</p>
+	    		<p>enter/exit</p>
+	    		<p>fullscreen</p>
+			 </div> -->
+    	</nav>
+
     </div>
-
-    <!--      Picture-->
-    <div id="funglasses">
-        <!--          <img src="assets/img/home/funglasses.png" alt="image of the author">-->
-    </div>
-
-    <!--      P5 loading-->
-    <!--	<div id="p5_loading" class="loadingclass"></div>-->
-</body></html>
+  </body>
+</html>

@@ -1,79 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>MAJ</title>
+    <title>maj</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/main.css">
-    <link rel="shortcut icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="../../new.css">
+    <link rel="shortcut icon" href="../../assets/favicon.png">
 </head>
 
 <body>
-    <div id="mobile_nav_menu">
-        <a href="index.html"><div id="navlogo"></div></a>
-        <a href="nav.html">
-            <div id="mobile_nav_menu_button" style="margin-top: -10px;"></div>
-        </a>
-    </div>
-    
-    <nav>
-        <a href="index.html">
-            <div id="navlogo"></div>
-        </a>
-        <div id="navlink">
-            <a href="graphics.html">
-                <p>Graphics</p>
-            </a>
-            <a href="interactive.html">
-                <p>Games</p>
-            </a>
-            <a href="video.html">
-                <p>Video</p>
-            </a>
-            <a href="about.html">
-                <p>About</p>
-            </a>
-            <a href="assets/jenkins_maj_resume_web.pdf" target="_blank"><p>Resume</p></a>
-        </div>
-    </nav>
 
-    <div class="container">
+    <header>
+        <h1>maj jenkins</h1>
+    </header>
 
-        <div id="about_image">
+    <a href="../../index.html">
+        <div class="back_button">
+            <div class="back_text">
+                <h3>back</h3>
+            </div>
         </div>
+    </a>
 
-        <div id="about_txt">
-            <p style="font-size: 110%; font-weight: 400; font-style: italic">As a firm believer in a just and ethical world, Maj (they/them) is a San Francisco based graphic designer and conceptual artist passionate about envisioning better futures.
-            </p>
-            <p>
-                Inspired by the natural world which surrounds them and motivated to change the social issues they encounter, Maj values the role which visual art has to play in changing societal paradigms. They believe in design as a pure form of communication, using artistic practice to dissect dominant attitudes, analyze cultural narratives, and provide socio-political critique. Their work is rhetoric, statement, and message.
-                <br><br>
-                They seek to create creative and immersive experiences for audiences using their training in print, web, and packaging design. They are currently a senior pursuing their B.A. in Design at the University of San Francisco, set to graduate in the upcoming Spring of 2022.
-                <br><br>
-                To inquire about business opportunities, please get in touch at <span style="text-decoration: underline"><a href="majrosejenkins@gmail.com">majrosejenkins@gmail.com</a></span>.
-            </p>
-            <br><br>
-        </div>
-
-        <!--
-        <div class="project_images">
-            <img src="assets/img/about/maj2017.jpg">
-        </div>
-        <div class="project_text">
-            <p><i>MAJ in 2017 participating in a collaborative exhibition at Minnesota Street Project with Spotlight on the Arts in San Francisco.</i></p>
-        </div>
--->
-
+<div class="project_about">
+    <div id="about_image">
+        <img src="assets/home/about/maj2021.png">
     </div>
 
-    <!--
-<footer>
-    <p style="font-size: 1.05em; padding-bottom: 0;">Maj Jenkins 2021.</p>
-    <p>Do not reuse without permission.</p>
-</footer>
--->
+    <div id="about_txt">
+        <p style="font-size: 110%; font-weight: 400; font-style: italic">As a firm believer in a just and ethical world, Maj (they/them) is a San Francisco based graphic designer and conceptual artist passionate about envisioning better futures.
+        </p>
+        <p>Inspired by the natural world which surrounds them and motivated to change the social issues they encounter, Maj values the role which visual art has to play in changing societal paradigms. They believe in design as a pure form of communication, using artistic practice to dissect dominant attitudes, analyze cultural narratives, and provide socio-political critique. Their work is rhetoric, statement, and message.
+        <br><br>
+        They seek to create creative and immersive experiences for audiences using their training in print, web, and packaging design. They are currently a senior pursuing their B.A. in Design at the University of San Francisco, set to graduate in the upcoming Spring of 2022.
+        <br><br>
+        To inquire about business opportunities, please get in touch at <span style="text-decoration: underline"><a href="majrosejenkins@gmail.com">majrosejenkins@gmail.com</a></span>.
+        </p>
+        <br><br>
+    </div>
+</div>
+
+
+<!-- Javascript -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
 
 </body>
-
 </html>

@@ -195,14 +195,14 @@ nav a:hover {
     width: 100%;
 	}
 	
-  .about {
+    #about {
     width: 100%;
-  }
+    }
   
-  .about p {
+  #about p {
     font-size: 1.5em;
     line-height: 1.5em;
-  }
+    }
   
   #bibliography h3 {
 	font-size: 1.5em;

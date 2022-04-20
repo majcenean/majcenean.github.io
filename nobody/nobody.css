@@ -170,14 +170,14 @@ nav a:hover {
 
 
 /*====MEDIA QUERY====================================*/
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (min-width: 1000px) {
+/* On screens that are 1200px wide or less, go from four columns to two columns */
+@media screen and (min-width: 1200px) {
   #about {
     width: 45%;
   }
 }
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+/* On screens that are 800px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
 	nav {
     flex-direction: column;

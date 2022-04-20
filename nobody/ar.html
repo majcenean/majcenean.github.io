@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content+"width=device width, initial scale=1.0">
+    <title>Nobody - AR</title>
+    <link rel="stylesheet" href="nobody.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    
+<!--     Import scripts -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https:cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+<!--   Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+</head>
+  
+<!--   Style -->
+  <style>
+  p, h1 {
+      font-family: 'Cabin', sans-serif;
+		user-select: none;
+		color: white;
+    }
+  
+  .arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #16455e;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    
+    animation-name: disappear;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+  }
+  
+
+  .arjs-loader div p {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    user-select: none;
+  }
+  
+  
+  @keyframes disappear{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    display: none;
+    opacity: 0;
+  }
+}
+</style>
+  
+  
+
+<!--   BODY --------------------------->
+  <body style="margin : 0px; overflow: hidden;">
+  
+    <!-- Loader that appears upon page load -->
+  <div class="arjs-loader">
+    <div><p>Loading, please wait...</p></div>
+  </div>
+
+
+<!--   A FRAME --------------------------->
+<!--     <a-scene embedded arjs> -->
+<!-- NOTE: vr-mode-ui="enabled: false" disables VR stuff -->
+<!-- NOTE: stats enables stats -->
+    <a-scene 
+    embedded 
+    arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono' 
+    renderer='antialias: true; alpha: true; precision: best;' 
+    vr-mode-ui="enabled: false" 
+    device-orientation-permission-ui="enabled: false">
+	
+<!-- 	DEFINE ASSETS -->
+	
+	  <a-assets>
+		<img id="aeolus" src="art/aeolus.png">
+	  </a-assets>
+    
+	  <a-assets>
+		<img id="calypso" src="art/calypso.png">
+	  </a-assets>
+    
+	  <a-assets>
+		<img id="charybdis" src="art/charybdis.png">
+	  </a-assets>
+	  
+	  	  <a-assets>
+		<img id="circe" src="art/circe.png">
+	  </a-assets>
+	  
+	  	  <a-assets>
+		<img id="cyclops" src="art/cyclops.png">
+	  </a-assets>
+	  
+	  	  <a-assets>
+		<img id="laestrygonians" src="art/laestrygonians.png">
+	  </a-assets>
+	  
+	  	  <a-assets>
+		<img id="lotophagoi" src="art/lotophagoi.png">
+	  </a-assets>
+	  
+	  <a-assets>
+		<img id="nekuia" src="art/nekuia.png">
+	  </a-assets>
+	  
+	  <a-assets>
+		<img id="phaeacians" src="art/phaeacians.png">
+	  </a-assets>
+	  
+	  	  <a-assets>
+		<img id="sirens" src="art/sirens.png">
+	  </a-assets>
+	  
+	  <a-assets>
+		<img id="thrinacia" src="art/thrinacia.png">
+	  </a-assets>
+    
+    
+<!--     DEFINE MARKERS -->
+	<a-marker type='pattern' url='pattern/aeolus.patt'>
+<!-- 	<a-image src="#aeolus" position="0 0.5 0"></a-image> -->
+	<a-box position='0 0.5 0' color="yellow" material='opacity: 0.5;'></a-box>
+<!-- 
+        <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        ></a-entity>
+ -->
+      </a-marker>
+      
+	<a-marker type='pattern' url='pattern/calypso.patt'>
+<!-- 	<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+<!-- 		<a-image src="#calypso" position="0 0 0"></a-image> -->
+<a-plane position='0 1.0 0' material='src:https://.com/playground/aframe/examples/img/coffee-01.png;'></a-plane>
+      </a-marker>
+      
+	<a-marker type='pattern' url='pattern/charybdis.patt'>
+<!-- 	<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+		<a-image src="#charybdis" position="0 0.5 0"></a-image>
+      </a-marker>
+      
+	<a-marker type='pattern' url='pattern/circe.patt'>
+	<a-box position='0 0.5 0' color="red" material='opacity: 0.5;'></a-box>
+<!-- 		<a-image src="#circe" position="0 0.5 0"></a-image> -->
+      </a-marker>
+      
+	<a-marker type='pattern' url='pattern/cyclops.patt'>
+		<a-box position='0 0.5 0' color="blue" material='opacity: 0.5;'></a-box>
+<!-- 		<a-image src="#cyclops" position="0 0.5 0"></a-image> -->
+      </a-marker>
+      
+      	<a-marker type='pattern' url='pattern/laestrygonians.patt'>
+		<a-image src="#laestrygonians" position="0 0.5 0"></a-image>
+      </a-marker>
+
+      
+      	<a-marker type='pattern' url='pattern/lotophagoi.patt'>
+		<a-image src="#lotophagoi" position="0 0.5 0"></a-image>
+      </a-marker>
+      
+      	<a-marker type='pattern' url='pattern/nekuia.patt'>
+		<a-image src="#nekuia" position="0 0.5 0"></a-image>
+      </a-marker>
+      
+      	<a-marker type='pattern' url='pattern/phaeacians.patt'>
+		<a-image src="#phaeacians" position="0 0.5 0"></a-image>
+      </a-marker>
+      
+      	<a-marker type='pattern' url='pattern/sirens.patt'>
+		<a-image src="#sirens" position="0 0.5 0"></a-image>
+      </a-marker>
+      
+      	<a-marker type='pattern' url='pattern/thrinacia.patt'>
+<!-- 		<a-image src="#thrinacia" position="0 0 0"></a-image> -->
+		<a-box position='0 0.5 0' color="green" material='opacity: 0.5;'></a-box>
+      </a-marker>
+      
+      <a-entity camera></a-entity>
+    </a-scene>
+
+  </body>
+</html>

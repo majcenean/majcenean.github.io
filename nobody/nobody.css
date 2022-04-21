@@ -214,6 +214,24 @@ nav a:hover {
 }
 
 
+/*====AR BACK BUTTON======================================*/
+
+#nav_ar {
+    position: fixed;
+    left:  0%;
+    width:  10%;
+    height:  5%;
+
+    background-color: #16455e;
+    color: #edf4fa;
+    font-family: 'Cabin', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 /*====AR LOADING SCREEN====================================*/
   

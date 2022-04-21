@@ -219,8 +219,9 @@ nav a:hover {
 #nav_ar {
     position: fixed;
     left:  0%;
-    width:  10%;
-    height:  5%;
+    bottom:  0;
+    width:  80px;
+    height:  50px;
 
     background-color: #16455e;
     color: #edf4fa;
@@ -230,6 +231,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 20px;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 

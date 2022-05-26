@@ -140,6 +140,10 @@ footer,
     display: block;
 }
 
+.project_section p a {
+    text-decoration: underline;
+}
+
 
 /* CV ///////////////////////////////////////////////// */
 .cv_text {

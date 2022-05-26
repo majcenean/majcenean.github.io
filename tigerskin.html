@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>maj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="new.css">
+    <link rel="shortcut icon" href="assets/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>maj jenkins</h1>
+    </header>
+
+    <a href="index.html">
+        <div class="back_button">
+            <div class="back_text">
+                <h3>back</h3>
+            </div>
+        </div>
+    </a>
+
+<!-- Image Slider -->
+<div class="slideshow-container">
+      <div class="mySlides">
+        <img src="projects/tigerskin/triptych.png" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="projects/tigerskin/tigerskin_thacher.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides">
+        <img src="projects/tigerskin/outreach.png" style="width: 100%">
+      </div>
+    <div class="mySlides">
+        <img src="projects/tigerskin/tabling.png" style="width: 100%">
+      </div>
+          <div class="mySlides">
+        <img src="projects/tigerskin/pledges.png" style="width: 100%">
+      </div>
+    </div>
+          <div class="mySlides">
+        <img src="projects/tigerskin/envelope.png" style="width: 100%">
+      </div>
+        </div>
+          <div class="mySlides">
+        <img src="projects/tigerskin/process_1.JPG" style="width: 100%">
+      </div>
+        </div>
+          <div class="mySlides">
+        <img src="projects/tigerskin/process_2.JPG" style="width: 100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dot_container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+</div>
+
+    <br>
+
+
+<div class="project_description">
+    <h2>Tigerskin</h2>
+    <p>2022. | Textile art, costume design, social activism.</p>
+</div>
+
+<div class="project_about">
+    <div class="project_section">
+        <h3>context</h3>
+        <p>Since the beginning of the coronavirus pandemic in 2020, the United States has seen a wave of anti-Asian hate crimes due to racist scapegoating and bias of the “perpetual foreigner.” In San Francisco alone, 292 anti-Asian incidents have been reported [<a href="https://www.kqed.org/news/11859965/700-anti-asian-hate-incidents-reported-in-bay-area-during-pandemic-true-figures-might-be-even-worse" target="_blank">source</a>].
+        <br><br>The Tiger Project is a campus-wide initiative to empower, uplift, and strengthen the voices of Asian members of the USF community (students, faculty, staff, family). To counter the 292 reported anti-Asian hate crimes, this project seeks to collect 292 pledges of solidarity with the Asian community. Pledges may be collected physically (print) or virtually (Google Form).</p>
+    </div>
+    <div class="project_section">
+        <h3>concept</h3>
+        <p>Tigerskin is a conceptual art piece in which the pledges from The Tiger Project are utilized. The 292 anti-Asian incidents in San Francisco are inverted from a number of hate into a number of solidarity with 292 pledges for protection and togetherness. This piece mimics a scaled armor or the furry skin of a tiger, a protective garment to shield one from violence.<br><br>The rippling sight of bold red and glistening gold envelopes composing the cloak draws the viewer in with admiration; when they learn that the amount of envelopes equals that of individual attacks on Asian people, they are shocked and dismayed; and again, when they learn that within each of these envelopes is a pledge to protect Asian individuals, they have a newfound empowerment that comes with wariness and knowledge.</p>
+    </div>
+    <div class="project_section">
+        <h3>present-day</h3>
+        <p>Tigerskin is on show until june 23rd at the Thacher Gallery in Gleeson Library, University of San Francisco.</p>
+    </div>
+</div>
+
+
+<!-- Javascript -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+
+    
+<footer>
+    <p>Maj Jenkins 2022. Do not reuse without permission.</p>
+</footer>
+
+</body>
+</html>

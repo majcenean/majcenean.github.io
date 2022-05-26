@@ -57,39 +57,39 @@ function preload() {
     archivoMediumItalic = loadFont('assets/font/Archivo-MediumItalic.otf');
 
 // Pieces
-    pieceImgArray[0] = loadImage('assets/home/passport_thumb.png');
-    pieceImgArray[1] = loadImage('assets/home/goodluck_thumb.jpg');
-    pieceImgArray[2] = loadImage('assets/home/psychopomp_thumb.gif');
-    pieceImgArray[3] = loadImage('assets/home/bhoc_thumb.png');
-    pieceImgArray[4] = loadImage('assets/home/copy_thumb.png');
-    pieceImgArray[5] = loadImage('assets/home/streetlamp_thumb.gif');
-    pieceImgArray[6] = loadImage('assets/home/stygga_thumb.gif');
-    pieceImgArray[7] = loadImage('assets/home/24hr_thumb.png');
+    pieceImgArray[0] = loadImage('assets/home/tigerskin_thumb.jpg');
+    pieceImgArray[1] = loadImage('assets/home/passport_thumb.png');
+    pieceImgArray[2] = loadImage('assets/home/goodluck_thumb.jpg');
+    pieceImgArray[3] = loadImage('assets/home/psychopomp_thumb.gif');
+    pieceImgArray[4] = loadImage('assets/home/bhoc_thumb.png');
+    pieceImgArray[5] = loadImage('assets/home/copy_thumb.png');
+    pieceImgArray[6] = loadImage('assets/home/streetlamp_thumb.gif');
+    pieceImgArray[7] = loadImage('assets/home/stygga_thumb.gif');
     pieceImgArray[8] = loadImage('assets/home/posters_thumb.png');
     pieceImgArray[9] = loadImage('assets/home/about/maj2017.jpg');
     pieceImgArray[10] = loadImage('assets/home/about/maj2017.jpg');
 
-    pieceTxtArray[0] = 'passport of angels';
-    pieceTxtArray[1] = 'good luck';
-    pieceTxtArray[2] = 'psychopomp';
-    pieceTxtArray[3] = 'bernal heights cinema';
-    pieceTxtArray[4] = 'copycat empire';
-    pieceTxtArray[5] = 'streetlamp';
-    pieceTxtArray[6] = 'stygga';
-    pieceTxtArray[7] = '24HR';
+    pieceTxtArray[0] = 'tigerskin';
+    pieceTxtArray[1] = 'passport of angels';
+    pieceTxtArray[2] = 'good luck';
+    pieceTxtArray[3] = 'psychopomp';
+    pieceTxtArray[4] = 'bernal heights cinema';
+    pieceTxtArray[5] = 'copycat empire';
+    pieceTxtArray[6] = 'streetlamp';
+    pieceTxtArray[7] = 'stygga';
     pieceTxtArray[8] = 'dead type';
     pieceTxtArray[9] = 'bio';
     pieceTxtArray[10] = 'cv / resume';
 
-    pieceLinkArray[0] = "projects/passport/passport.html";
-    pieceLinkArray[1] = "projects/goodluck/goodluck.html";
-    pieceLinkArray[2] = "projects/psychopomp/psychopomp.html";
-    pieceLinkArray[3] = "projects/bhoc/bhoc.html";
-    pieceLinkArray[4] = "projects/copy/copy.html";
-    pieceLinkArray[5] = "projects/streetlamp/streetlamp.html";
-    pieceLinkArray[6] = "projects/stygga/stygga.html";
-    pieceLinkArray[7] = "projects/24hr/24hr.html";
-    pieceLinkArray[8] = "projects/deadtype/deadtype.html";
+    pieceLinkArray[0] = "tigerskin.html";
+    pieceLinkArray[1] = "passport.html";
+    pieceLinkArray[2] = "goodluck.html";
+    pieceLinkArray[3] = "psychopomp.html";
+    pieceLinkArray[4] = "bhoc.html";
+    pieceLinkArray[5] = "copy.html";
+    pieceLinkArray[6] = "streetlamp.html";
+    pieceLinkArray[7] = "stygga.html";
+    pieceLinkArray[8] = "deadtype.html";
     pieceLinkArray[9] = "about.html";
     pieceLinkArray[10] = "cv.html";
 

@@ -65,7 +65,6 @@ function preload() {
     pieceImgArray[5] = loadImage('assets/home/bhoc_thumb.png');
     pieceImgArray[6] = loadImage('assets/home/copy_thumb.png');
     pieceImgArray[7] = loadImage('assets/home/streetlamp_thumb.gif');
-    // pieceImgArray[7] = loadImage('assets/home/stygga_thumb.gif');
     pieceImgArray[8] = loadImage('assets/home/posters_thumb.png');
     pieceImgArray[9] = loadImage('assets/home/about/maj2017.jpg');
     pieceImgArray[10] = loadImage('assets/home/about/maj2017.jpg');
@@ -78,7 +77,6 @@ function preload() {
     pieceTxtArray[5] = 'bernal heights cinema';
     pieceTxtArray[6] = 'copycat empire';
     pieceTxtArray[7] = 'streetlamp';
-    // pieceTxtArray[7] = 'stygga';
     pieceTxtArray[8] = 'dead type';
     pieceTxtArray[9] = 'bio';
     pieceTxtArray[10] = 'cv / résumé';
@@ -91,7 +89,6 @@ function preload() {
     pieceLinkArray[5] = "bhoc.html";
     pieceLinkArray[6] = "copy.html";
     pieceLinkArray[7] = "streetlamp.html";
-    // pieceLinkArray[7] = "stygga.html";
     pieceLinkArray[8] = "deadtype.html";
     pieceLinkArray[9] = "about.html";
     pieceLinkArray[10] = "cv.html";

@@ -103,8 +103,177 @@
 		}
 
 		#p5_loading {
-	    color: #e0e0e0;
+	    /*color: #e0e0e0;*/
+	    font-family: 'Archivo', sans-serif;
+	    color: #000000;
+	    background-color: transparent;
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      top:  30%;
+      left:  50%;
+      height: 400px;
+      width: 400px;
+      margin-left: -200px;
+      margin-top: -200px;
 		}
+
+		/*BEGIN IMPORTED FROM 2021 About*/
+		#homeabout {
+		    position: absolute;
+		    width: 100%;
+		    bottom: 20%;
+		    height: 60%;
+		    font-size: 2.5em;
+		}
+
+		#homeabout p {
+		    text-transform: lowercase;
+		    letter-spacing: 0.5px;
+		}
+
+		#about_maj {
+		    font-size: 1.75em;
+		    letter-spacing: 2px;
+		    font-weight: 600;
+		}
+
+		#about_desc {
+		    font-size: 1em;
+		    letter-spacing: 0.25px;
+		}
+
+		#small_note {
+		    font-size: 0.75em;
+		    letter-spacing: 0.25px;
+		    opacity:  0.6;
+		}
+
+		#small_note a {
+			text-transform: none;
+			text-decoration: underline;
+			color: #000000;
+		}
+
+
+		/*Solar System imported from CSScodelab free code*/
+		/*Source: https://www.csscodelab.com/html-css-loading-page-animations/*/
+		.spinner-box {
+		  width: 300px;
+		  height: 300px;
+		  margin-left: 50px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  background-color: transparent;
+		}
+
+		.solar-system {
+		  width: 250px;
+		  height: 250px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+
+		.orbit {
+		  position: relative;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  border: 1px solid #999893;
+		  border-radius: 50%;
+		} 
+
+		.earth-orbit {
+		  width: 165px;
+		  height: 165px;
+		  -webkit-animation: spin 12s linear 0s infinite;
+		}
+
+		.venus-orbit {
+		  width: 120px;
+		  height: 120px;
+		  -webkit-animation: spin 7.4s linear 0s infinite;
+		}
+
+		.mercury-orbit {
+		  width: 90px;
+		  height: 90px;
+		  -webkit-animation: spin 3s linear 0s infinite;
+		}
+
+		.planet {
+		  position: absolute;
+		  top: -5px;
+		  width: 10px;
+		  height: 10px;
+		  border-radius: 50%;
+		  background-color: #C7CBD0;
+		}
+
+		.sun {
+		  width: 35px;
+		  height: 35px;
+		  border-radius: 50%;
+		  background-color: #767166;
+		}
+
+		.leo {
+		  position: absolute;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  border-radius: 50%;
+		}
+
+		.blue-orbit {
+		  width: 165px;
+		  height: 165px;
+		  border: 1px solid #91daffa5;
+		  -webkit-animation: spin3D 3s linear .2s infinite;
+		}
+
+		.green-orbit {
+		  width: 120px;
+		  height: 120px;
+		  border: 1px solid #91ffbfa5;
+		  -webkit-animation: spin3D 2s linear 0s infinite;
+		}
+
+		.red-orbit {
+		  width: 90px;
+		  height: 90px;
+		  border: 1px solid #ffca91a5;
+		  -webkit-animation: spin3D 1s linear 0s infinite;
+		}
+
+		.white-orbit {
+		  width: 60px;
+		  height: 60px;
+		  border: 2px solid #ffffff;
+		  -webkit-animation: spin3D 10s linear 0s infinite;
+		}
+
+		@keyframes spin {
+		  from {
+		    transform: rotate(0);
+		  }
+		  to{
+		    transform: rotate(359deg);
+		  }
+		}
+
+		@keyframes spin3D {
+		  from {
+		    transform: rotate3d(.5,.5,.5, 360deg);
+		  }
+		  to{
+		    transform: rotate3d(0deg);
+		  }
+		}
+
+		/*END IMPORTED FROM 2021 About*/
 
 		.sketch_full {
 			visibility: visible;
@@ -131,7 +300,41 @@
   	    	<!-- <img src="assets/frame.png" alt="decorative frame" draggable="false" style="display:inline; position: static; margin-top: 75px;"> -->
   	    </div>
 
-		<div  class="sketch_full">
+    <div id="p5_loading" class="loadingclass">
+    	<!-- BEGIN IMPORTED FROM 2021 -->
+    	<div id="homeabout">
+        <p>
+            <span id="about_maj">Loading...</span></span>
+            <br><br>
+            <span id="about_desc">Hi, my name is Maj.<br><br>I'm an artist, designer, and all-around creative that spends my time looking at birds and working on nifty projects here in San francisco, California.</span>
+            <br><br>
+            <span id="small_note">coded using <a href="https://p5js.org/" target="_blank">p5.js</a> and hosted by <a href="https://pages.github.com/" target="_blank">github pages</a></span>
+        </p>
+
+        <!-- SOLAR SYSTEM imported from CSS Code Lab -->
+				<div class="spinner-box">
+				  <div class="solar-system">
+				    <div class="earth-orbit orbit">
+				      <div class="planet earth"></div>
+				      <div class="venus-orbit orbit">
+				        <div class="planet venus"></div>
+				        <div class="mercury-orbit orbit">
+				          <div class="planet mercury"></div>
+				          <div class="sun"></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+	    </div>
+
+			<!--     	<div id="funglasses">
+				      <img src="assets/home/about/funglasses.png" alt="image of the author">
+				    </div> -->
+	    <!-- END IMPORTED FROM 2021 -->
+    </div>
+
+		<div class="sketch_full">
     	<script src="homepage.js"></script>
     </div>
 

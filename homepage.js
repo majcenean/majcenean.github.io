@@ -57,7 +57,7 @@ function preload() {
     archivoMediumItalic = loadFont('assets/font/Archivo-MediumItalic.otf');
 
 // Pieces
-    pieceImgArray[0] = loadImage('assets/home/nobody_thumb.jpg');
+    pieceImgArray[0] = loadImage('nobody/img/DSC_0190.JPG');
     pieceImgArray[1] = loadImage('assets/home/tigerskin_thumb.jpg');
     pieceImgArray[2] = loadImage('assets/home/passport_thumb.png');
     pieceImgArray[3] = loadImage('assets/home/goodluck_thumb.jpg');

@@ -883,7 +883,7 @@ footer p:hover {
 /*Footer*/
     footer{
         position: fixed;
-        background-color: var(--ColorBg);
+/*        background-color: var(--ColorBg);*/
         padding-bottom: 10px;
         justify-content: flex-end;
     }

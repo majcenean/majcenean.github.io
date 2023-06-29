@@ -1,75 +1,57 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="">
+  <head>
     <meta charset="utf-8">
-    <title>maj</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="new.css">
-    <link rel="shortcut icon" href="assets/favicon.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maj jenkins</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+	</head>
 
-<body>
+	<body>
 
-    <header>
-        <h1>maj jenkins</h1>
-    </header>
+  <!-- <div class="container y scrollsnap appear" dir="ltr"> -->
+  <div class="container">
 
-    <a href="../../index.html">
-        <div class="back_button">
-            <div class="back_text">
-                <h3>back</h3>
-            </div>
+		<footer style="position: fixed;">
+			<a href="index.html"><p>Home</p></a>
+		</footer>
+
+		<div class="about">
+			<div class="about-text">
+				<h2 style="text-align: left; margin-top:0;">maj jenkins</h2>
+				<div class="about-contact">
+					<p>multimedia artist/graphic designer
+	        <br>majrosejenkins@gmail.com
+	        <br>www.linkedin.com/in/majcenean/
+	        <br>www.majs.space/
+	        </p>
         </div>
-    </a>
-
-<div class="project_about">
-    <div id="about_image">
-        <img src="assets/home/about/maj2021.png">
-    </div>
-
-    <div id="about_txt">
-        <p style="font-size: 110%; font-weight: 400; font-style: italic">As a firm believer in a just and ethical world, Maj (they/them) is a San Francisco based graphic designer and conceptual artist passionate about envisioning better futures.
-        </p>
-        <p>Inspired by the natural world which surrounds them and motivated to change the social issues they encounter, Maj values the role which visual art has to play in changing societal paradigms. They believe in design as a pure form of communication, using artistic practice to dissect dominant attitudes, analyze cultural narratives, and provide socio-political critique. Their work is rhetoric, statement, and message.
         <br><br>
-        To inquire about business opportunities, please get in touch at <span style="text-decoration: underline"><a href="majrosejenkins@gmail.com">majrosejenkins@gmail.com</a></span>.
-        </p>
-        <br><br>
-    </div>
+        <p><a href="maj_jenkins_resume_web.pdf" target="_blank">résumé available online (PDF) &#8599;</a></p>
+			</div>
+			<div class="about-image" style="background-image: url('img/about/maj2021.png');" id="about-image-1"></div>
+		</div>
+
+		<br>
+		<div class="about">
+			<div class="about-text">
+				<p>As a firm believer in a just and ethical world, Maj (they/them) is a San Francisco based graphic designer and conceptual artist passionate about envisioning better futures.</p>
+	      <p>Inspired by the natural world which surrounds them and motivated to change the social issues they encounter, Maj values the role which visual art has to play in changing societal paradigms. They believe in design as a pure form of communication, using artistic practice to dissect dominant attitudes, analyze cultural narratives, and provide socio-political critique. Their work is rhetoric, statement, and message.</p>
+	      <p>To inquire about business opportunities, please get in touch at <a href="majrosejenkins@gmail.com">majrosejenkins@gmail.com</a>.
+		    </p>
+			</div>
+			<div class="about-image" style="background-image: url('img/about/maj2017.jpg');" id="about-image-2"></div>
+		</div>
 </div>
+ <!-- scrolls scrolls-anim="fade-up" scrolls-easing="ease-in" -->
 
 
-<!-- Javascript -->
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if(n > slides.length) {
-          slideIndex = 1
-        }
-        if(n < 1) {
-          slideIndex = slides.length
-        }
-        for(i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for(i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
+	<!-- Fade-in animation -->
+	<script src="js/scrolls.min.js"></script>
+
+  </body>
 
 
-</body>
 </html>

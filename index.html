@@ -1,361 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>maj</title>
-    <style> 
-    	/*Archivo*/
-    	@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');;
+    <title>maj jenkins</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+	</head>
 
-		html {
-			box-sizing: border-box;
-		}
+	<body>
 
-		*, *:before; *:after; {
-			box-sizing: inherit;
-		}
+  <div class="container y scrollsnap appear" dir="ltr">
+  <!-- <div class="container"> -->
 
-		body {
-			padding: 0; 
-			margin: 0;
-			text-align: left;
-			background-color: #e0e0e0;
-			user-select: none;
-			font-family: 'Archivo', sans-serif;
-			color: #000000;
-		}
-
-		p {
-			font-size: 18px;
-		}
-
-		p, h1, h2, h3, h4, h5 {
-			font-family: 'Archivo', sans-serif;
-		}
-
-		h1, h2, h3, h4, h5 {
-			font-family: 'Archivo', sans-serif;
-		}
-
-		iframe {
-			display: block;
-			margin: auto;
-			border: none;
-			border-radius: 0px;
-			position: absolute;
-			width: 1366px;
-			height: 768px;
-			font-family: 'Archivo', sans-serif;
-		}
-
-		header {
-			display: block;
-			margin: auto;
-			text-align: left;
-			width: 1366px;
-			height: 90px;
-		}
-
-		nav {
-			width: 450px;
-			height: 100px;
-			position: absolute;
-			top: 0%;
-			right: 5%;
-			opacity: 50%;
-			transition: 0.2s;
-		}
-
-		nav:hover {
-			opacity: 95%;
-		}
-
-		#container_img {
-			display: flex;
-			justify-content: space-around;
-			align-items: flex-end;
-			margin-top: 15px;
-		}
-
-		#container_img img {
-			width: 60px;
-			height: 60px;
-		}
-
-		#container_p {
-			display: flex;
-			justify-content: space-around;
-			align-items: flex-end;
-			margin-top: -25px;
-		}
-
-		#container_p p {
-			width: 90px;
-			height: 10px;
-		}
-
-		#frame {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			z-index: -10;
-		}
-
-		#p5_loading {
-	    /*color: #e0e0e0;*/
-	    font-family: 'Archivo', sans-serif;
-	    color: #000000;
-	    background-color: transparent;
-      box-sizing: border-box;
-      display: block;
-      position: absolute;
-      top:  30%;
-      left:  50%;
-      height: 400px;
-      width: 400px;
-      margin-left: -200px;
-      margin-top: -200px;
-		}
-
-		/*BEGIN IMPORTED FROM 2021 About*/
-		#homeabout {
-		    position: absolute;
-		    width: 100%;
-		    bottom: 20%;
-		    height: 60%;
-		    font-size: 2.5em;
-		}
-
-		#homeabout p {
-		    text-transform: lowercase;
-		    letter-spacing: 0.5px;
-		}
-
-		#about_maj {
-		    font-size: 1.75em;
-		    letter-spacing: 2px;
-		    font-weight: 600;
-		}
-
-		#about_desc {
-		    font-size: 1em;
-		    letter-spacing: 0.25px;
-		}
-
-		#small_note {
-		    font-size: 0.75em;
-		    letter-spacing: 0.25px;
-		    opacity:  0.6;
-		}
-
-		#small_note a {
-			text-transform: none;
-			text-decoration: underline;
-			color: #000000;
-		}
+	<footer>
+		<a href="about.html"><p>About</p></a>
+	</footer>
 
 
-		/*Solar System imported from CSScodelab free code*/
-		/*Source: https://www.csscodelab.com/html-css-loading-page-animations/*/
-		.spinner-box {
-		  width: 300px;
-		  height: 300px;
-		  margin-left: 50px;
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  background-color: transparent;
-		}
+    <div id="header">
+    	<hgroup>
+    		<!-- Third-person -->
+    		<!-- <h1><span class="emphasis">Maj Jenkins</span> is a multimedia designer and all-around creative that spends their time working on nifty projects and looking at birds on the marshes in &#8203;San Francisco, California.</h1> -->
 
-		.solar-system {
-		  width: 250px;
-		  height: 250px;
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		}
+				<!-- First-person -->
+    		<h1>Hi, my name's <span class="emphasis">Maj</span>. I'm a multimedia designer and all-around creative that spends my time working on nifty projects and looking at birds on the marshes in &#8203;San Francisco, California.</h1>
+    	</hgroup>
 
-		.orbit {
-		  position: relative;
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  border: 1px solid #999893;
-		  border-radius: 50%;
-		} 
+  	<a href="#Projects">
+			<div id="scrollgraphic">
+		      <h1>&#8595;</h1>
+		      <p>SCROLL DOWN</p>
+		  </div>
+		</a>
 
-		.earth-orbit {
-		  width: 165px;
-		  height: 165px;
-		  -webkit-animation: spin 12s linear 0s infinite;
-		}
+    </div>
 
-		.venus-orbit {
-		  width: 120px;
-		  height: 120px;
-		  -webkit-animation: spin 7.4s linear 0s infinite;
-		}
+    <!-- <div id="responsive-breaker"></div> -->
 
-		.mercury-orbit {
-		  width: 90px;
-		  height: 90px;
-		  -webkit-animation: spin 3s linear 0s infinite;
-		}
-
-		.planet {
-		  position: absolute;
-		  top: -5px;
-		  width: 10px;
-		  height: 10px;
-		  border-radius: 50%;
-		  background-color: #C7CBD0;
-		}
-
-		.sun {
-		  width: 35px;
-		  height: 35px;
-		  border-radius: 50%;
-		  background-color: #767166;
-		}
-
-		.leo {
-		  position: absolute;
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  border-radius: 50%;
-		}
-
-		.blue-orbit {
-		  width: 165px;
-		  height: 165px;
-		  border: 1px solid #91daffa5;
-		  -webkit-animation: spin3D 3s linear .2s infinite;
-		}
-
-		.green-orbit {
-		  width: 120px;
-		  height: 120px;
-		  border: 1px solid #91ffbfa5;
-		  -webkit-animation: spin3D 2s linear 0s infinite;
-		}
-
-		.red-orbit {
-		  width: 90px;
-		  height: 90px;
-		  border: 1px solid #ffca91a5;
-		  -webkit-animation: spin3D 1s linear 0s infinite;
-		}
-
-		.white-orbit {
-		  width: 60px;
-		  height: 60px;
-		  border: 2px solid #ffffff;
-		  -webkit-animation: spin3D 10s linear 0s infinite;
-		}
-
-		@keyframes spin {
-		  from {
-		    transform: rotate(0);
-		  }
-		  to{
-		    transform: rotate(359deg);
-		  }
-		}
-
-		@keyframes spin3D {
-		  from {
-		    transform: rotate3d(.5,.5,.5, 360deg);
-		  }
-		  to{
-		    transform: rotate3d(0deg);
-		  }
-		}
-
-		/*END IMPORTED FROM 2021 About*/
-
-		.sketch_full {
-			visibility: visible;
-			display: block;
-		}
-
-		@media screen and (max-width: 760px) {
-			.sketch_full {
-				visibility: hidden;
-				display: none;
-			}
-		}
-    </style>
-    <script src="assets/lib/p5.js"></script>
-    <!-- <script src="assets/lib/p5.sound.js"></script> -->
-    <!-- <script src="assets/lib/p5.play.js"></script> -->
-    <!-- <script src="assets/lib/p5.timer.js"></script> -->
-    <!-- <script src="assets/lib/p5.clickable.js"></script> -->
-    <!-- <script src="assets/lib/p5.2DAdventure.js"></script> -->
-    <link rel="shortcut icon" href="assets/favicon.png" />
-  </head>
-  <body>
-  	    <div id="frame">
-  	    	<!-- <img src="assets/frame.png" alt="decorative frame" draggable="false" style="display:inline; position: static; margin-top: 75px;"> -->
-  	    </div>
-
-    <div id="p5_loading" class="loadingclass">
-    	<!-- BEGIN IMPORTED FROM 2021 -->
-    	<div id="homeabout">
-        <p>
-            <span id="about_maj">Loading...</span></span>
-            <br><br>
-            <span id="about_desc">Hi, my name is Maj.<br><br>I'm an artist, designer, and all-around creative that spends my time looking at birds and working on nifty projects here in San francisco, California.</span>
-            <br><br>
-            <span id="small_note">coded using <a href="https://p5js.org/" target="_blank">p5.js</a> and hosted by <a href="https://pages.github.com/" target="_blank">github pages</a></span>
-        </p>
-
-        <!-- SOLAR SYSTEM imported from CSS Code Lab -->
-				<div class="spinner-box">
-				  <div class="solar-system">
-				    <div class="earth-orbit orbit">
-				      <div class="planet earth"></div>
-				      <div class="venus-orbit orbit">
-				        <div class="planet venus"></div>
-				        <div class="mercury-orbit orbit">
-				          <div class="planet mercury"></div>
-				          <div class="sun"></div>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				</div>
+		<!-- Projects -->
+		<div class="project" id="Projects">
+	  	<div class="projectimage">
+	  		<a href="projects/nobody.html">
+	  		<div class="homeimgholster" id="img1"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+	    	<h6>Installation, print, illustration, laser cutting, Augmented Reality</h6>
+	    	<h1>Nobody</h1>
+	    	<p>A retelling of Homer’s <i>Odyssey</i> that explores how patriarchal structures shape familial relationships and examines how storytelling can close emotional distance between parents and children.</p>
 	    </div>
-
-			<!--     	<div id="funglasses">
-				      <img src="assets/home/about/funglasses.png" alt="image of the author">
-				    </div> -->
-	    <!-- END IMPORTED FROM 2021 -->
     </div>
 
-		<div class="sketch_full">
-    	<script src="homepage.js"></script>
+    <div class="project">
+	  	<div class="projectimage">
+	  		<a href="projects/bernalheights.html">
+	  		<div class="homeimgholster" id="img2"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+		    <h6>Brand identity, Website design, Print</h6>
+				<h1>Bernal Heights Outdoor Cinema</h1>
+	    	<p>A full identity refresh, website redesign, and print collateral for a local San Francisco-based film festival nonprofit.</p>
+	    </div>
     </div>
 
-    	<header>
-    		<!-- <h1>maj jenkins</h1> -->
-    	</header>
-
-    	<nav>
-<!--     		<div id="container_img">
-	    		<img src="assets/favicon.png" alt="key 1" draggable="false">
-	    		<img src="assets/favicon.png" alt="key 2" draggable="false">
-	    		<img src="assets/favicon.png" alt="key 3" draggable="false">
-    		</div>
-    		<div id="container_p">
-	    		<p>move</p>
-	    		<p>sprint</p>
-	    		<p>enter/exit</p>
-	    		<p>fullscreen</p>
-			 </div> -->
-    	</nav>
-
+    <div class="project">
+	  	<div class="projectimage">
+	  		<a href="projects/tigerskin.html">
+	  		<div class="homeimgholster" id="img3"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+		    <h6>Community Engagement, Print, Web, Textile Art</h6>
+				<h1>Tigerskin</h1>
+	    	<p>A conceptual art piece in which 292 pledges standing in solidarity against 292 anti-Asian incidents in San Francisco are inserted into red envelopes (<i>lai see</i>) and combined to create a protective garment shielding one from violence.</p>
+	    </div>
     </div>
+
+    <div class="project">
+	  	<div class="projectimage">
+	  		<a href="projects/passport.html">
+	  		<div class="homeimgholster" id="img4"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+		    <h6>Print, Illustration</h6>
+				<h1>Passport of United Angels</h1>
+	    	<p>A <i>détournement</i> of an illustrated 1960s catalogue of Northeastern American seabirds, creating a graphic booklet addressing the harrowing journeys and injustices faced by Mexican immigrants at the Southern US border.</p>
+	    </div>
+    </div>
+
+    <div class="project">
+	  	<div class="projectimage">
+	  		<a href="projects/goodluck.html">
+	  		<div class="homeimgholster" id="img5"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+		    <h6>Concept Art, Packaging</h6>
+				<h1>Good Luck</h1>
+	    	<p>A piece investigating obsessive-compulsive tendencies, combining the ornate and beautiful with the horrific and guilt-inducing, an illustration of the world of a child exploring unknown powers, magic, and mysticism.</p>
+	    </div>
+    </div>
+
+    <div class="project">
+	  	<div class="projectimage">
+	  		<a href="projects/deadtype.html">
+	  		<div class="homeimgholster" id="img6"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+		    <h6>Print, Typography</h6>
+				<h1>Dead Type</h1>
+	    	<p>Explorations of historical typefaces from separate categories of type and periods of history. This project involved research into the development of European type throughout the centuries and the historical context in which they arose.</p>
+	    </div>
+    </div>
+
+<!-- Project template -->
+<!--     <div class="project">
+	  	<div class="projectimage"></div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+		    <h6>Type</h6>
+				<h1>Title</h1>
+	    	<p>Lorem ipsum</p>
+	    </div>
+    </div> -->
+	</div>
+
+	<!-- Fade-in animation -->
+	<script src="js/scrolls.min.js"></script>
+
   </body>
+
+
 </html>

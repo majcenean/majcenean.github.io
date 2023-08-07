@@ -689,7 +689,7 @@ footer p:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {
     hgroup {
         font-size: 1.35em;
     }
@@ -697,7 +697,7 @@ footer p:hover {
     .project {
         font-size: 1.15em;
     }
-}
+}*/
 
 /*Small Monitors*/
 @media screen and (max-width: 1200px) {

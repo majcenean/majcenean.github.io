@@ -339,6 +339,31 @@ a #scrollgraphic {
     cursor: pointer;
 }
 
+
+
+
+/* Funglasses */
+
+#funglasses {
+    background: url("img/funglasses.png") no-repeat center top;
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+#seagull {
+    background: url("img/seagull.png") no-repeat center top;
+    background-size: cover;
+    width: 120px;
+    height: 46px;
+    display: inline-block;
+}
+
+
+
+
 /* ///////////////////////////////////////////////////// */
 
 /*Project Text Descriptions*/
@@ -658,9 +683,21 @@ footer p:hover {
 
 
 
+
+
 /* ///////////////////////////////////////////////////// */
 
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+    hgroup {
+        font-size: 1.35em;
+    }
+
+    .project {
+        font-size: 1.15em;
+    }
+}
 
 /*Small Monitors*/
 @media screen and (max-width: 1200px) {
@@ -888,6 +925,7 @@ footer p:hover {
         justify-content: flex-end;
     }
 }
+
 
 /*iPhone 12 Pro*/
 @media screen and (max-width: 395px) {

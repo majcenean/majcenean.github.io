@@ -327,6 +327,21 @@ a #scrollgraphic {
     background-size: cover;
 }
 
+#img10 {
+    background: #ffffff url("img/home/10.png") no-repeat center top;
+    background-size: cover;
+}
+
+#img11 {
+    background: #ffffff url("img/home/11.png") no-repeat center top;
+    background-size: cover;
+}
+
+#img12 {
+    background: #ffffff url("img/home/12.png") no-repeat center top;
+    background-size: cover;
+}
+
 .projecttext {
     height: 100px;
     width: 35%;

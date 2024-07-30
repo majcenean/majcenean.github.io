@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>maj jenkins</title>
+    <title>Maj Jenkins ✹ Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
 	</head>
@@ -14,54 +14,80 @@
   <div class="container y scrollsnap appear" dir="ltr">
   <!-- <div class="container"> -->
 
-	<footer>
-		<a href="about.html"><p>About</p></a>
-	</footer>
-
+	<nav>
+		<a href="about.html"><p id="navbutton">About</p></a>
+		<a href="resume.html"><p id="navbutton">Résumé</p></a>
+	</nav>
 
     <div id="header">
     	<hgroup>
+    		<img src="img/characters.svg" draggable="false">
+
+    		<!-- <img id="funglasses" src="img/funglasses.png"> -->
+
+				<!-- Intro + Bio -->
+    		<div id="headerbio">
     		<!-- Third-person -->
     		<!-- <h1><span class="emphasis">Maj Jenkins</span> is a multimedia designer and all-around creative that spends their time working on nifty projects and looking at birds on the marshes in &#8203;San Francisco, California.</h1> -->
 
 				<!-- First-person -->
-    		<h1>Hi, my name's <span class="emphasis">Maj</span>. <div id="funglasses"></div> I'm a multimedia designer and all-around creative that spends my time working on nifty projects and looking at birds <div id="seagull"></div> on the marshes in &#8203;San Francisco, California.</h1>
+    		<!-- <h1>Hi, my name's <span class="emphasis">Maj</span>. <div id="funglasses"></div> I'm a multimedia designer and all-around creative that spends my time working on nifty projects and looking at birds <div id="seagull"></div> on the marshes in &#8203;San Francisco, California.</h1> -->
+    		
+    		<h1>Hi there, my name's Maj.</h1>
+
+    		<h2>I'm an exhibition, graphic, and motion designer<br>who loves to create for people and places.</h2>
+    		</div>
+
+				<!-- Scrollgraphic -->
+    		<a href="#Projects">
+				<div id="scrollgraphic">
+		      <div id="scrollcircle"><h1>&#8595;</h1></div>
+		      <p>SCROLL DOWN</p>
+				  </div>
+				</a>
     	</hgroup>
 
-  	<a href="#Projects">
-			<div id="scrollgraphic">
-		      <h1>&#8595;</h1>
-		      <p>SCROLL DOWN</p>
-		  </div>
-		</a>
+    	<div id="headerbg"></div>
 
-    </div>
+    </div> <!-- header div -->
 
     <!-- <div id="responsive-breaker"></div> -->
 
 		<!-- Projects -->
-
 		<div class="project" id="Projects">
 	  	<div class="projectimage">
-	  		<a href="projects/entryway.html">
-	  		<div class="homeimgholster" id="img1"></div>
+	  		<a href="projects/cnhf.html">
+	  		<div class="homeimgholster" id="img-cnhf"></div>
 		  	</a>
 	  	</div>
 	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-	    	<h6>Wayfinding, Print and Digital Signage</h6>
-	    	<h1>Remaking the Visitor Experience</h1>
-	    	<p>A complete refresh of museum signage at the Exploratorium's entryway.</p>
+	    	<h6><span class="designtype">Exhibition</span> <span class="designtype">Print</span> <span class="designtype">Digital&nbsp;Monitors</span></h6> 
+	    	<h1>California Native<br>Homeland Festival</h1>
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	    </div>
+    </div>
+
+    <div class="project">
+	  	<div class="projectimage">
+	  		<a href="projects/bee.html">
+	  		<div class="homeimgholster" id="img-bee"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+	    	<h6><span class="designtype">Exhibit</span> <span class="designtype">Print</span></h6>
+	    	<h1>Bee Theater<br>Exhibit Prototype</h1>
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 	    </div>
     </div>
 
 		<div class="project">
 	  	<div class="projectimage">
 	  		<a href="projects/gao.html">
-	  		<div class="homeimgholster" id="img2"></div>
+	  		<div class="homeimgholster" id="img-gao"></div>
 		  	</a>
 	  	</div>
 	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-	    	<h6>Infographics, Exhibit Signage, Exhibition Design</h6>
+	    	<h6><span class="designtype">Infographics</span> <span class="designtype">Exhibition</span></h6>
 	    	<h1>The Great Animal Orchestra</h1>
 	    	<p>The West Coast premiere of an audioimmersive art experience exploring the natural world. Exploratorium Summer Exhibition 2023.</p>
 	    </div>
@@ -70,24 +96,37 @@
 		<div class="project">
 	  	<div class="projectimage">
 	  		<a href="projects/map.html">
-	  		<div class="homeimgholster" id="img3"></div>
+	  		<div class="homeimgholster" id="img-map"></div>
 		  	</a>
 	  	</div>
 	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-	    	<h6>Environmental Design Research, Map Design</h6>
+	    	<h6><span class="designtype">Wayfinding</span></h6>
 	    	<h1>Exploratorium Map Redesign Experiment</h1>
 	    	<p>An experiment in museum navigation, accessibility, and design.</p>
+	    </div>
+    </div>
+
+    <div class="project">
+	  	<div class="projectimage">
+	  		<a href="projects/tigerskin.html">
+	  		<div class="homeimgholster" id="img-tiger"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+		    <h6><span class="designtype">Activism</span> <span class="designtype">Textile&nbsp;Art</span> <span class="designtype">Email&nbsp;Campaign</span></h6>
+				<h1>The Tiger Project & <i>Tigerskin</i></h1>
+	    	<p>A campus-wide initiative and conceptual artwork, created to empower, uplift, and strengthen Asian voices during the 2022 waves of anti-Asian violence.</p>
 	    </div>
     </div>
 
 		<div class="project">
 	  	<div class="projectimage">
 	  		<a href="projects/nobody.html">
-	  		<div class="homeimgholster" id="img4"></div>
+	  		<div class="homeimgholster" id="img-nobody"></div>
 		  	</a>
 	  	</div>
 	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-	    	<h6>Installation, print, illustration, laser cutting, Augmented Reality</h6>
+	    	<h6><span class="designtype">Installation</span> <span class="designtype">Illustration</span> <span class="designtype">AR</span> <span class="designtype">Laser&nbsp;Cut</span> <span class="designtype">Print</span></h6>
 	    	<h1>Nobody</h1>
 	    	<p>A retelling of Homer’s <i>Odyssey</i> that explores how patriarchal structures shape familial relationships and examines how storytelling can close emotional distance between parents and children.</p>
 	    </div>
@@ -95,51 +134,38 @@
 
     <div class="project">
 	  	<div class="projectimage">
-	  		<a href="projects/bernalheights.html">
-	  		<div class="homeimgholster" id="img5"></div>
-		  	</a>
-	  	</div>
-	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-		    <h6>Brand identity, Website design, Print</h6>
-				<h1>Bernal Heights Outdoor Cinema</h1>
-	    	<p>A full identity refresh, website redesign, and print collateral for a local San Francisco-based film festival nonprofit.</p>
-	    </div>
-    </div>
-
-    <div class="project">
-	  	<div class="projectimage">
-	  		<a href="projects/tigerskin.html">
-	  		<div class="homeimgholster" id="img6"></div>
-		  	</a>
-	  	</div>
-	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-		    <h6>Community Engagement, Print, Web, Textile Art</h6>
-				<h1>Tigerskin</h1>
-	    	<p>A conceptual art piece in which 292 pledges standing in solidarity against 292 anti-Asian incidents in San Francisco are inserted into red envelopes (<i>lai see</i>) and combined to create a protective garment shielding one from violence.</p>
-	    </div>
-    </div>
-
-    <div class="project">
-	  	<div class="projectimage">
 	  		<a href="projects/passport.html">
-	  		<div class="homeimgholster" id="img7"></div>
+	  		<div class="homeimgholster" id="img-passport"></div>
 		  	</a>
 	  	</div>
 	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-		    <h6>Print, Illustration</h6>
-				<h1>Passport of United Angels</h1>
+		    <h6><span class="designtype">Print</span> <span class="designtype">Illustration</span></h6>
+				<h1>Passport of<br>United Angels</h1>
 	    	<p>A <i>détournement</i> of an illustrated 1960s catalogue of Northeastern American seabirds, creating a graphic booklet addressing the harrowing journeys and injustices faced by Mexican immigrants at the Southern US border.</p>
 	    </div>
     </div>
 
     <div class="project">
 	  	<div class="projectimage">
-	  		<a href="projects/goodluck.html">
-	  		<div class="homeimgholster" id="img8"></div>
+	  		<a href="projects/streetlamp.html">
+	  		<div class="homeimgholster" id="img-streetlamp"></div>
 		  	</a>
 	  	</div>
 	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-		    <h6>Concept Art, Packaging</h6>
+		    <h6><span class="designtype">Web Game</span></h6>
+				<h1>Streetlamp</h1>
+	    	<p>A wry satirical take on Orientalist media tropes—play to avenge your family's honor!</p>
+	    </div>
+    </div>
+
+   <div class="project">
+	  	<div class="projectimage">
+	  		<a href="projects/goodluck.html">
+	  		<div class="homeimgholster" id="img-goodluck"></div>
+		  	</a>
+	  	</div>
+	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
+		    <h6><span class="designtype">Packaging&nbsp;Design</span></h6>
 				<h1>Good Luck</h1>
 	    	<p>A piece investigating obsessive-compulsive tendencies, combining the ornate and beautiful with the horrific and guilt-inducing, an illustration of the world of a child exploring unknown powers, magic, and mysticism.</p>
 	    </div>
@@ -148,51 +174,37 @@
     <div class="project">
 	  	<div class="projectimage">
 	  		<a href="projects/deadtype.html">
-	  		<div class="homeimgholster" id="img9"></div>
+	  		<div class="homeimgholster" id="img-deadtype"></div>
 		  	</a>
 	  	</div>
 	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-		    <h6>Print, Typography</h6>
+		    <h6><span class="designtype">Print</span> <span class="designtype">Typography</span></h6>
 				<h1>Dead Type</h1>
 	    	<p>Explorations of historical typefaces from separate categories of type and periods of history. This project involved research into the development of European type throughout the centuries and the historical context in which they arose.</p>
 	    </div>
     </div>
 
-      <div class="project">
-	  	<div class="projectimage">
-	  		<a href="projects/streetlamp.html">
-	  		<div class="homeimgholster" id="img10"></div>
-		  	</a>
-	  	</div>
-	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-		    <h6>Interactive Game</h6>
-				<h1>Streetlamp</h1>
-	    	<p>A satirical game taking on Orientalist media tropes - play to avenge your family's honor!</p>
-	    </div>
-    </div>
 
-      <div class="project">
-	  	<div class="projectimage">
-	  		<a href="projects/psychopomp.html">
-	  		<div class="homeimgholster" id="img11"></div>
-		  	</a>
-	  	</div>
-	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-		    <h6>Interactive Game</h6>
-				<h1>Psychopomp</h1>
-	    	<p>A conceptual game about the death, life, and purgatory of trauma.</p>
-	    </div>
-    </div>
+<!-- Footer -->
+		<footer>
+			<hgroup>
+				<h1>Looking for more?</h1>
+				<h2 style="font-weight:600">Try these collections:</h2>
+				<div id="footersuggest">
+					<a href="freelance.html" class="footerlink"><h3>Branding</h3></a>
+					<a href="explo.html" class="footerlink"><h3>Exploratorium</h3></a>
+					<a href="games.html" class="footerlink"><h3>Games</h3></a>
+				</div>
+			</hgroup>
+			<div id="socials">
+				<a href="https://www.linkedin.com/majcenean/" target="_blank" class="sociallink"><img src="img/social/linkedin.png"></a>
+				<a href="https://vimeo.com/majcenean" target="_blank" class="sociallink"><img src="img/social/vimeo.png"></a>
+				<a href="https://github.com/majcenean" target="_blank" class="sociallink"><img src="img/social/github.png"></a>
+				<a href="https://www.instagram.com/majcenean/" target="_blank" class="sociallink"><img src="img/social/insta.png"></a>
+				<a href="https://www.x.com/majcenean/" target="_blank" class="sociallink"><img src="img/social/twitter.png"></a>
+			</div>
+		</footer>
 
-<!-- Project template -->
-<!--     <div class="project">
-	  	<div class="projectimage"></div>
-	    <div class="projecttext" scrolls scrolls-anim="fade-up" scrolls-easing="ease-in">
-		    <h6>Type</h6>
-				<h1>Title</h1>
-	    	<p>Lorem ipsum</p>
-	    </div>
-    </div> -->
 	</div>
 
 	<!-- Fade-in animation -->

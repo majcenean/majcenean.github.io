@@ -6,7 +6,7 @@
 /* Global Overrides */
 html {
     box-sizing: border-box;
-    cursor: url('img/cursor/pen.png'), auto;
+    cursor: url('img/cursor/pen.png'), default;
 }
 
 *,
@@ -35,7 +35,7 @@ body {
     color: black;
     font-family: Helvetica;
 /*    cursor: auto;*/
-    cursor: url('img/cursor/pen.png'), auto;
+    cursor: url('img/cursor/pen.png'), default;
 }
 
 /*Variables*/
@@ -333,11 +333,11 @@ footer {
 }
 
 .footerlink:hover{
-    cursor: url('img/cursor/point.png'), auto;
+    cursor: url('img/cursor/point.png'), pointer;
 }
 
 .footerlink:active{
-    cursor: url('img/cursor/click.png'), auto;
+    cursor: url('img/cursor/click.png'), pointer;
 }
 
 #socials {
@@ -367,11 +367,11 @@ footer {
 }
 
 .sociallink:hover{
-    cursor: url('img/cursor/point.png'), auto;
+    cursor: url('img/cursor/point.png'), pointer;
 }
 
 .sociallink:active{
-    cursor: url('img/cursor/click.png'), auto;
+    cursor: url('img/cursor/click.png'), pointer;
 }
 
 
@@ -442,11 +442,11 @@ a #scrollgraphic {
 }
 
 #scrollgraphic:hover{
-    cursor: url('img/cursor/point.png'), auto;
+    cursor: url('img/cursor/point.png'), pointer;
 }
 
 #scrollgraphic:active{
-    cursor: url('img/cursor/click.png'), auto;
+    cursor: url('img/cursor/click.png'), pointer;
 }
 
 
@@ -513,6 +513,11 @@ a #scrollgraphic {
 
 #img-cameron {
     background: #ffffff url("img/home/cameron.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+#img-hmm {
+    background: #ffffff url("img/home/hmm.jpg") no-repeat center top;
     background-size: cover;
 }
 
@@ -588,11 +593,11 @@ a #scrollgraphic {
 
 .homeimgholster:hover{
 /*    cursor: pointer;*/
-    cursor: url('img/cursor/point.png'), auto;
+    cursor: url('img/cursor/point.png'), pointer;
 }
 
 .homeimgholster:active{
-    cursor: url('img/cursor/click.png'), auto;
+    cursor: url('img/cursor/click.png'), pointer;
 }
 
 
@@ -684,11 +689,11 @@ nav p:hover {
 
 nav a:hover{
 /*    cursor: pointer;*/
-    cursor: url('img/cursor/point.png'), auto;
+    cursor: url('img/cursor/point.png'), pointer;
 }
 
 nav a:active{
-    cursor: url('img/cursor/click.png'), auto;
+    cursor: url('img/cursor/click.png'), pointer;
 }
 
 /*Button wrapper for individual project pages*/
@@ -723,11 +728,11 @@ nav a:active{
 
 #navhome h1:hover{
 /*    cursor: pointer;*/
-    cursor: url('img/cursor/point.png'), auto;
+    cursor: url('img/cursor/point.png'), pointer;
 }
 
 #navhome h1:active{
-    cursor: url('img/cursor/click.png'), auto;
+    cursor: url('img/cursor/click.png'), pointer;
 }
 
 
@@ -774,19 +779,19 @@ nav a:active{
 
     /*custom cursor*/
     .prev:hover {
-        cursor: url('img/cursor/left.png'), auto;
+        cursor: url('img/cursor/left.png'), pointer;
     }
 
     .prev:active{
-        cursor: url('img/cursor/left.png'), auto;
+        cursor: url('img/cursor/left.png'), pointer;
     }
 
     .next:hover {
-        cursor: url('img/cursor/right.png'), auto;
+        cursor: url('img/cursor/right.png'), pointer;
     }
 
     .next:active{
-        cursor: url('img/cursor/right.png'), auto;
+        cursor: url('img/cursor/right.png'), pointer;
     }
 
     /*Position the arrows inside the buttons*/
@@ -825,15 +830,15 @@ nav a:active{
     }
 
     .dot_container:hover {
-        cursor: url('img/cursor/point.png'), auto;
+        cursor: url('img/cursor/point.png'), pointer;
     }
 
     .dot:hover{
-        cursor: url('img/cursor/point.png'), auto;
+        cursor: url('img/cursor/point.png'), pointer;
     }
 
     .dot:active{
-        cursor: url('img/cursor/click.png'), auto;
+        cursor: url('img/cursor/click.png'), pointer;
     }
 
     .dot_container:hover .dot {
@@ -1082,7 +1087,7 @@ nav a:active{
 
 /* MEDIA QUERIES */
 
-/*@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1920px) {
     hgroup {
         font-size: 1.35em;
     }
@@ -1090,7 +1095,10 @@ nav a:active{
     .project {
         font-size: 1.15em;
     }
-}*/
+    .project-desc .projecttext h1 {
+        margin-top: -20%;
+    }
+}
 
 /*Touchscreen queries*/
 @media (hover: none) {
@@ -1251,6 +1259,7 @@ nav a:active{
         width: 90%;
         margin: 20px 0px 30px 0px;
         margin-top: none;
+        width: 80%;
     }
     .slideshow-container {
         max-height: 450px;
@@ -1307,7 +1316,9 @@ nav a:active{
         font-size: 1em;
         line-height: 0.25em;
     }
-/*Project Image*/
+    .project-desc .projecttext h1 {
+        margin-top: 20%;
+    }
     .slideshow-container {
         max-height: 700px;
     }
@@ -1406,8 +1417,8 @@ nav a:active{
         font-size: 3.5em;
     }
     #socials {
-        width: 90%;
-        left: 5%;
+        width: 60%;
+        left: 20%;
         bottom: 0;
         height: 200px;
         flex-flow: wrap;
@@ -1421,6 +1432,8 @@ nav a:active{
     .sociallink img {
         width: 45px;
         height: 45px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .sociallink img:hover {
         width: 45px;
@@ -1428,6 +1441,14 @@ nav a:active{
     }
     .sociallink img {
         padding: 0px 10px 0px 10px;
+    }
+/* Nav */
+    nav {
+        font-size: 1em;
+    }
+/*Project Pages*/
+    .slideshow-container {
+        max-height: 60%;
     }
 }
 
@@ -1444,14 +1465,22 @@ nav a:active{
     .projecttext {
         font-size: 0.75em;
     }
+/* Nav */
+    nav {
+        font-size: .9em;
+    }
 }
 
-/*Pixel 4*/
-@media screen and (max-width: 365px) {
+/*iPhone X and Pixel 4*/
+@media screen and (max-width: 380px) {
 
 /*Header*/
     hgroup h1, h2 {
         font-size: 2.15em;
+    }
+/* Nav */
+    nav {
+        font-size: .75em;
     }
 }
 
@@ -1464,6 +1493,10 @@ nav a:active{
     }
     .projecttext {
         font-size: 0.75em;
+    }
+/* Nav */
+    nav {
+        font-size: .6em;
     }
 }
 

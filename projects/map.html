@@ -1,127 +1,172 @@
-
 <!DOCTYPE html>
-<html lang="">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maj Jenkins ✹ Design</title>
+    <title>Maj Jenkins ✹ Project</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/favicon.ico" />
-	</head>
+</head>
 
-	<body>
+<!--    Set up localhost with this command: -->
+<!--    py -m http.server   -->
 
-	<!-- Navigation Bar -->
-	<nav style="justify-content: space-between">
-		<a href="../index.html"><span id="navhome"><h1>Maj Jenkins</h1></span></a>
-		<div id="navwrapper">
-			<a href="../about.html"><p>About</p></a>
-			<a href="../resume.html"><p>Résumé</p></a>
-		</div>
-	</nav>
+<body>
 
-	<!-- Title -->
-	<div id="project-title" class="project-desc">
-    <div class="projecttext">
-			<h1>Exploratorium Map Redesign Experiment</h1>
-			<div class="projectdetails">
-				<h6>2022</h6>
-				<h6>Wayfinding</h6>
-			</div>
-		</div>
-	</div>
+    <!--    Navigation  -->
+    <nav>
+        <a href="../index.html">
+            <div class="site-logo"></div>
+        </a>
 
-<div class="container y scrollsnap appear" dir="ltr">
+        <a href="../about.html">
+            <p>Contact</p>
+        </a>
+    </nav>
 
-<!-- Image Slider -->
-	<div class="slideshow-container">
-      <div class="mySlides fade" style="background-image: url(../img/projects/map/Map_Mockup_3.jpg);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/map/Map_Mockup_2.jpg);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/map/Map_1.jpg);"></div>
+    <!--    Title and Description  -->
+    <div class="project-page-grid">
+        <div class="project-page-title">
+            <h2>Map Redesign Experiment</h2>
+            <p>Wayfinding, 2022</p>
+        </div>
+        <div class="project-page-description">
+            <p>An experiment in museum navigation, accessibility, and design.</p>
+        </div>
 
-      <!-- <div class="mySlides" style="background-image: url(INSERT);"></div> -->
+        <!--    Hero Image or Slideshow  -->
+        <div class="project-page-hero-image">
+            <div class="slideshow-container">
+                <!--Images-->
+                <img class="mySlides" src="../img/projects/map/Map_Mockup_3.jpg">
+                <!--Buttons-->
+<!--
+                <a class="prev" onclick="plusSlides(-1)">
+                    <p>&#129104;</p>
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    <p>&#129106;</p>
+                </a>
+-->
 
-      <a class="prev" onclick="plusSlides(-1)"><p>&#129104;</p></a>
-      <a class="next" onclick="plusSlides(1)"><p>&#129106;</p></a>
+                <!--Dots-->
+<!--
+                <div class="dot_container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+-->
 
-      <div class="dot_container">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-<!--          <span class="dot" onclick="currentSlide(6)"></span>
-          <span class="dot" onclick="currentSlide(7)"></span>
-          <span class="dot" onclick="currentSlide(8)"></span>
-          <span class="dot" onclick="currentSlide(9)"></span>
-          <span class="dot" onclick="currentSlide(10)"></span> -->
-    	</div>
-		</div>	<!-- Slideshow container div -->
-</div> <!-- Container div -->
+            </div> <!-- End of slideshow div -->
+        </div><!-- End of hero div -->
+    </div>
 
-<!-- Text -->
-  <div class="project-desc" style="margin-top: 0;">
+    <!--    Navivation Bar Ribbon at Bottom of Page-->
+    <div class="fixedbottom">
+        <div>
+            <a href="cnhf.html">
+                <div class="nextprev">
+                    <p>&#8592;</p>
+                </div>
+            </a>
+            <p>Exploratorium Map Redesign Experiment</p>
+            <a href="gao.html">
+                <div class="nextprev">
+                    <p>&#8594;</p>
+                </div>
+            </a>
+        </div>
+    </div>
 
-		<br>
+    <!--    Main Content: Text and Images -->
+    <div class="project-content-container">
+        <aside>
+            <p>With the goal of increasing museum accessibility, specifically for those lacking map-reading literacy and those with sensory processing disorders, I spearheaded an experimental redesign of the Exploratorium's map.</p>
+            <p>I adapted to working in an isometric style in this experimental map, exploring if an added layer of dimension would assist visitor wayfinding. The use of color was a strong choice to make it easier to distinguish between galleries. The use of landmarks and clear communicative icons were used to help identify points of interest.</p>
+            <p>Around six drafts were created based on close examination of the existing map. An in-progress mockup was shared with co-workers around the office and on the floor to solicit feedback.</p>
+            <div class="project-page-desc-end sticky">
+                <div class="credits-column">
+                    <div>
+                        <emphasis>
+                            <p>Organization</p>
+                        </emphasis>
+                        <p>Exploratorium</p>
+                    </div>
+                    <div>
+                        <emphasis>
+                            <p>Disciplines</p>
+                        </emphasis>
+                        <p>Wayfinding</p>
+                    </div>
+                </div>
+                <div class="credits-column">
+                    <div>
+                        <emphasis>
+                            <p>Project team</p>
+                        </emphasis>
+                        <p>Janet Pepitas</p>
+                        <p>Porsche Noble</p>
+                    </div>
+                    <div>
+                        <emphasis>
+                            <p>Year</p>
+                        </emphasis>
+                        <p>2022</p>
+                    </div>
+                </div>
 
-		<!-- Description -->
-		<div class="project-about">
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">Context</h3>
-			    <p>With the goal of increasing museum accessibility, specifically for those lacking map-reading literacy and those with sensory processing disorders, I spearheaded an experimental redesign of the Exploratorium's map.</p>
-			</div>
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">Design</h3>
-			    <p>I adapted to working in an isometric style in this experimental map, exploring if an added layer of dimension would assist visitor wayfinding. The use of color was a strong choice to make it easier to distinguish between galleries. The use of landmarks and clear communicative icons were used to help identify points of interest.</p>
-			</div>
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">Presentation</h3>
-			    <p>Learn more from my end-of-internship presentation here: <a href="https://docs.google.com/presentation/d/1bsleTEjYj3PqXFDIWpbPzr--VnSbP8HV5B6RMIzhqUI/edit#slide=id.g1478bbfc507_0_0" target="_blank">Exploratorium Exhibitions Internship, Summer 2022 &#8599;</a></p>
-			</div>
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">Design Team</h3>
-			    <p>Lead Supervisor: Janet Pepitas. Exhibition Interns: Maj Jenkins and Porsche Noble.</p>
-			</div>
-			<br>
-		</div> <!-- Project about div -->
+            </div>
+        </aside>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/map/Map_Sketch.jpg">
-				<p class="project-photo-caption">Around six drafts were created based on close examination of the existing map.</p>
-		</div>
-	</div>
+        <main>
+            <img src="../img/projects/map/Map_Mockup_1.jpg" alt="map 1">
+            <img src="../img/projects/map/Map_Mockup_2.jpg" alt="map 2">
+            <img src="../img/projects/map/Map_Sketch.jpg" alt="map sketch">
+            <img src="../img/projects/map/Map_3.jpg" alt="map draft">
+            <img src="../img/projects/map/Map_2.jpg" alt="map draft">
+            <img src="../img/projects/map/Map_1.jpg" alt="map showing">
+        </main>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/map/Map_2.jpg">
-				<p class="project-photo-caption">An in-progress mockup was shared with co-workers around the office and on the floor to solicit feedback.</p>
-		</div>
-	</div>
+    </div>
 
-	</div> <!-- Project div -->
+    <!--    Footer  -->
+    <footer>
+        <a href="../index.html">
+            <p>See all projects&nbsp;&#8594;</p>
+        </a>
+        <div class="socials">
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/majcenean" target="_blank">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.instagram.com/majcenean/" target="_blank">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://vimeo.com/majcenean" target="_blank">
+                    <p>Vimeo</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://github.com/majcenean" target="_blank">
+                    <p>Github</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 
+    <!--    Scripts-->
+    <!-- Image slideshow -->
+    <script src="../js/imageSlideshow.js"></script>
 
-	<footer style="top: 20%">
-		<div id="footerhead">
-			<h1>Looking for more?</h1>
-			<div id="footersuggest">
-				<a href="../index.html" class="footerlink"><h3>Back to Home</h3></a>
-			</div>
-		</div>
-		<div id="socials">
-			<a href="https://www.linkedin.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/linkedin.png"></a>
-			<a href="https://vimeo.com/majcenean" target="_blank" class="sociallink"><img src="../img/social/vimeo.png"></a>
-			<a href="https://github.com/majcenean" target="_blank" class="sociallink"><img src="../img/social/github.png"></a>
-			<a href="https://www.instagram.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/insta.png"></a>
-			<a href="https://www.x.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/twitter.png"></a>
-		</div>
-	</footer>
+    <!-- Fade-in animation -->
+    <script src="../js/scrolls.min.js"></script>
 
-	<!-- Image slideshow -->
-	<script src="../js/imageSlideshow.js"></script>
-
-	<!-- Fade-in animation -->
-	<script src="../js/scrolls.min.js"></script>
-
-  </body>
+</body>
 
 </html>

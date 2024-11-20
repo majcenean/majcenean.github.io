@@ -1,173 +1,192 @@
-
 <!DOCTYPE html>
-<html lang="">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maj Jenkins ✹ Design</title>
+    <title>Maj Jenkins ✹ Project</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/favicon.ico" />
-	</head>
+</head>
 
-	<body>
+<!--    Set up localhost with this command: -->
+<!--    py -m http.server   -->
 
-	<!-- Navigation Bar -->
-	<nav style="justify-content: space-between">
-		<a href="../index.html"><span id="navhome"><h1>Maj Jenkins</h1></span></a>
-		<div id="navwrapper">
-			<a href="../about.html"><p>About</p></a>
-			<a href="../resume.html"><p>Résumé</p></a>
-		</div>
-	</nav>
+<body>
 
-	<!-- Title -->
-	<div id="project-title" class="project-desc">
-    <div class="projecttext">
-			<h1>Streetlamp</h1>
-			<div class="projectdetails">
-				<h6>2021</h6>
-				<h6>Web Game</h6>
-			</div>
-		</div>
-	</div>
+    <!--    Navigation  -->
+    <nav>
+        <a href="../index.html">
+            <div class="site-logo"></div>
+        </a>
 
-<div class="container y scrollsnap appear" dir="ltr">
+        <a href="../about.html">
+            <p>Contact</p>
+        </a>
+    </nav>
 
-<!-- Image Slider -->
-	<div class="slideshow-container">
-      <div class="mySlides fade" style="background-image: url(../img/projects/streetlamp/streetlamp_mockup_1.png);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/streetlamp/streetlamp_mockup_2.png);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/streetlamp/streetlamp_mockup_4.png);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/streetlamp/streetlamp_mockup_3.png);"></div>
+    <!--    Title and Description  -->
+    <div class="project-page-grid">
+        <div class="project-page-title">
+            <h2>Streetlamp</h2>
+            <p>Web Game, 2021</p>
+        </div>
+        <div class="project-page-description">
+            <p>A wry satirical take on Orientalist media tropes—play to avenge your family's honor!</p>
+        </div>
 
-      <a class="prev" onclick="plusSlides(-1)"><p>&#129104;</p></a>
-      <a class="next" onclick="plusSlides(1)"><p>&#129106;</p></a>
+        <!--    Hero Image or Slideshow  -->
+        <div class="project-page-hero-image">
+            <div class="slideshow-container">
 
-<div class="dot_container">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
+                <div class="vimeo">
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/598645692?autoplay=1&loop=1&autopause=0&background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Streetlamp"></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <p>Video loading...</p>
+                </div>
+
+                <!--Images-->
+                <!--
+                <img class="mySlides" src="../img/projects/hmm/hmm_3.jpg">
+                <img class="mySlides" src="../img/projects/hmm/hmm_2.jpg">
+                <img class="mySlides" src="../img/projects/hmm/hmm_1.jpg">
+-->
+
+                <!--Buttons-->
+                <!--
+                <a class="prev" onclick="plusSlides(-1)">
+                    <p>&#129104;</p>
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    <p>&#129106;</p>
+                </a>
+-->
+
+                <!--Dots-->
+                <!--
+                <div class="dot_container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+-->
+
+            </div> <!-- End of slideshow div -->
+        </div><!-- End of hero div -->
     </div>
-		</div>	<!-- Slideshow container div -->
-</div> <!-- Container div -->
 
-<!-- Text -->
-  <div class="project-desc" style="margin-top: 0;">
-
-		<br>
-
-		<!-- Video -->
-		<div class="project_video" style="padding:56.25% 0 0 0;position:relative;">
-		<iframe src="https://player.vimeo.com/video/598645692?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=5943ed4783" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="streetlamp.mp4"></iframe>
+    <!--    Navivation Bar Ribbon at Bottom of Page-->
+    <div class="fixedbottom">
+        <div>
+            <a href="previous_project">
+                <div class="nextprev">
+                    <p>&#8592;</p>
+                </div>
+            </a>
+            <p>Streetlamp</p>
+            <a href="next_project">
+                <div class="nextprev">
+                    <p>&#8594;</p>
+                </div>
+            </a>
+        </div>
     </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
 
-    <br>
+    <!--    Main Content: Text and Images -->
+    <div class="project-content-container">
+        <aside>
+            <p>Streetlamp is an interactive web game which satirizes Orientalist tendencies in physical and fictional environments.</p>
+            <p>By exploring anti-Asian racism within visual and storytelling mediums that bleeds into the real world, it calls attention to the fetishization and sexualization Asian women suffer, in addition to criticizing racist tropes and stereotypes which are commonplace in Western media.</p>
+            <p>Visual development started with the player character, Ren. I was inspired in part by <i>Street Fighter</i>'s design for, and the fandom's sexualization of, the character Chun Li. I developed a playful, cartoonish art style for the game as I created the first spritesheet.</p>
+            <p>I moved on to creating the non-player characters (NPCs) which would populate the world. More NPCs, including the "yellow fever" zombies which chase the player character around the map.</p>
+            <p>Map and world development followed. The beginning quadrant of the map is reminiscent of a quiet hometown. Inspired by Clement Street and Inner Richmond, Chinatown, and the Outer Sunset. Home to Ren's immediate family, who aid her on her quest.</p>
+            <p>The second quadrant of the map has more beaten down buildings. It is home to The Upstart, a nameless girl forgotten by her family. Inspired by the Tenderloin.</p>
+            <p>The third quadrant of the map is a so-called "red light district," criticizing the overt exploitation and sexualization of Asian women, both in the online world… and in the physical world.</p>
+            <p>The final section of the map is home to the techie king. Inspired by the Financial District, this is the location of the "final boss," a literal boss, who asks Ren to forget the murder of her parents and join forces with him.</p>
+            <div class="project-page-desc-end sticky">
+                <div class="credits-column">
+                    <div>
+                        <emphasis>
+                            <p>Class</p>
+                        </emphasis>
+                        <p>Interaction Design</p>
+                    </div>
+                    <div>
+                        <emphasis>
+                            <p>Disciplines</p>
+                        </emphasis>
+                        <p>p5.js library</p>
+                        <p>Game design</p>
+                    </div>
+                </div>
+                <div class="credits-column">
+                    <div>
+                        <emphasis>
+                            <p>Year</p>
+                        </emphasis>
+                        <p>2021</p>
+                    </div>
+                </div>
 
-		<!-- Description -->
-		<div class="project-about">
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">CONCEPT</h3>
-			    <p>This is an interactive web game which satirizes Orientalist tendencies in physical and fictional environments. <br><br>By exploring anti-Asian racism within visual and storytelling mediums that bleeds into the real world, it calls attention to the fetishization and sexualization Asian women suffer, in addition to criticizing racist tropes and stereotypes which are commonplace in Western media.</p>
-			</div>
-		</div> <!-- Project about div -->
+            </div>
+        </aside>
 
+        <main>
+            <img src="../img/projects/streetlamp/streetlamp_detail_1.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_2.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_3.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_4.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_5.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_6.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_7.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_8.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_9.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_detail_10.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_mockup_1.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_mockup_2.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_mockup_3.png" alt="image">
+            <img src="../img/projects/streetlamp/streetlamp_mockup_4.png" alt="image">
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_1.png">
-				<p class="project-photo-caption">Visual development started with the player character, Ren. I was inspired in part by <i>Street Fighter</i>'s design for, and the fandom's sexualization of, the character Chun Li.</p>
-		</div>
-	</div>
+        </main>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_2.png">
-				<p class="project-photo-caption">I developed a playful, cartoonish art style for the game as I created the first spritesheet.</p>
-		</div>
-	</div>
+    </div>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_3.png">
-				<p class="project-photo-caption">I moved on to creating the non-player characters (NPCs) which would populate the world.</p>
-		</div>
-	</div>
+    <!--    Footer  -->
+    <footer>
+        <a href="../index.html">
+            <p>See all projects&nbsp;&#8594;</p>
+        </a>
+        <div class="socials">
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/majcenean" target="_blank">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.instagram.com/majcenean/" target="_blank">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://vimeo.com/majcenean" target="_blank">
+                    <p>Vimeo</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://github.com/majcenean" target="_blank">
+                    <p>Github</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_4.png">
-				<p class="project-photo-caption">More NPCs, including the "yellow fever" zombies which chase the player character around the map.</p>
-		</div>
-	</div>
+    <!--    Scripts-->
+    <!-- Image slideshow -->
+    <script src="../js/imageSlideshow.js"></script>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_5.png">
-				<p class="project-photo-caption">Map and world development.</p>
-		</div>
-	</div>
+    <!-- Fade-in animation -->
+    <script src="../js/scrolls.min.js"></script>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_6.png">
-				<p class="project-photo-caption">The beginning quadrant of the map, reminiscient of a quiet hometown. Inspired by Clement Street and Inner Richmond, Chinatown, and the Outer Sunset. Home to Ren's immediate family, who aid her on her quest.</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_7.png">
-				<p class="project-photo-caption">The second quadrant of the map. More beaten down buildings. Home to The Upstart, a nameless girl forgotten by her family. Inspired by the Tenderloin.</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_8.png">
-				<p class="project-photo-caption">The third quadrant of the map, a "red light district." criticizing the overt exploitation and sexualization of Asian women, both in the online world...</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_9.png">
-				<p class="project-photo-caption">... and in the physical world.</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/streetlamp/streetlamp_detail_10.png">
-				<p class="project-photo-caption">The final section of the map, home to the techie king. Inspired by the Financial District. This is the location of the "final boss," a literal boss, who asks Ren to forget the murder of her parents and join forces with him.</p>
-		</div>
-	</div>
-
-	</div> <!-- Project div -->
-
-	<footer style="top: 20%">
-		<div id="footerhead">
-			<h1>Looking for more?</h1>
-			<div id="footersuggest">
-				<a href="../index.html" class="footerlink"><h3>Back to Home</h3></a>
-			</div>
-		</div>
-		<div id="socials">
-			<a href="https://www.linkedin.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/linkedin.png"></a>
-			<a href="https://vimeo.com/majcenean" target="_blank" class="sociallink"><img src="../img/social/vimeo.png"></a>
-			<a href="https://github.com/majcenean" target="_blank" class="sociallink"><img src="../img/social/github.png"></a>
-			<a href="https://www.instagram.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/insta.png"></a>
-			<a href="https://www.x.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/twitter.png"></a>
-		</div>
-	</footer>
-
-	<!-- Image slideshow -->
-	<script src="../js/imageSlideshow.js"></script>
-
-	<!-- Fade-in animation -->
-	<script src="../js/scrolls.min.js"></script>
-
-  </body>
+</body>
 
 </html>

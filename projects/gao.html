@@ -1,189 +1,208 @@
-
 <!DOCTYPE html>
-<html lang="">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maj Jenkins ✹ Design</title>
+    <title>Maj Jenkins ✹ Project</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/favicon.ico" />
-	</head>
+</head>
 
-	<body>
+<!--    Set up localhost with this command: -->
+<!--    py -m http.server   -->
 
-<!-- Navigation Bar -->
-	<nav style="justify-content: space-between">
-		<a href="../index.html"><span id="navhome"><h1>Maj Jenkins</h1></span></a>
-		<div id="navwrapper">
-			<a href="../about.html"><p>About</p></a>
-			<a href="../resume.html"><p>Résumé</p></a>
-		</div>
-	</nav>
+<body>
 
-	<!-- Title -->
-	<div id="project-title" class="project-desc">
-    <div class="projecttext">
-			<h1>The Great Animal Orchestra</h1>
-			<div class="projectdetails">
-				<h6>2023</h6>
-				<h6>Infographics, Exhibition</h6>
-			</div>
-		</div>
-	</div>
+    <!--    Navigation  -->
+    <nav>
+        <a href="../index.html">
+            <div class="site-logo"></div>
+        </a>
 
-<div class="container y scrollsnap appear" dir="ltr">
+        <a href="../about.html">
+            <p>Contact</p>
+        </a>
+    </nav>
 
-	
+    <!--    Title and Description  -->
+    <div class="project-page-grid">
+        <div class="project-page-title">
+            <h2>The Great Animal Orchestra</h2>
+            <p>Exhibition, 2023</p>
+        </div>
+        <div class="project-page-description">
+            <p>The West Coast premiere of an audio-immersive art experience exploring the natural world. Exploratorium Summer Exhibition 2023.</p>
+        </div>
 
-<!-- Image Slider -->
-	<div class="slideshow-container">
-      <div class="mySlides fade" style="background-image: url(../img/projects/gao/GAO_2.jpg);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/gao/GAO_5.jpg);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/gao/GAO_6.jpg);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/gao/GAO_7.jpg);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/gao/GAO_8.jpg);"></div>
+        <!--    Hero Image or Slideshow  -->
+        <div class="project-page-hero-image">
+            <div class="slideshow-container">
+                
+                <!--Images-->
+                <img class="mySlides" src="../img/projects/gao/GAO_1.jpg">
 
-      <!-- <div class="mySlides" style="background-image: url(INSERT);"></div> -->
+                <!--Buttons-->
+<!--
+                <a class="prev" onclick="plusSlides(-1)">
+                    <p>&#129104;</p>
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    <p>&#129106;</p>
+                </a>
+-->
 
-      <a class="prev" onclick="plusSlides(-1)"><p>&#129104;</p></a>
-      <a class="next" onclick="plusSlides(1)"><p>&#129106;</p></a>
+                <!--Dots-->
+<!--
+                <div class="dot_container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+-->
 
-      <div class="dot_container">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-    	</div>
-		</div>	<!-- Slideshow container div -->
-</div> <!-- Container div -->
+            </div> <!-- End of slideshow div -->
+        </div><!-- End of hero div -->
+    </div>
 
-<!-- Text -->
-  <div class="project-desc" style="margin-top: 0;">
+    <!--    Navivation Bar Ribbon at Bottom of Page-->
+    <div class="fixedbottom">
+        <div>
+            <a href="map.html">
+                <div class="nextprev">
+                    <p>&#8592;</p>
+                </div>
+            </a>
+            <p>The Great Animal Orchestra</p>
+            <a href="bee.html">
+                <div class="nextprev">
+                    <p>&#8594;</p>
+                </div>
+            </a>
+        </div>
+    </div>
 
-		<br>
+    <!--    Main Content: Text and Images -->
+    <div class="project-content-container">
+        <aside>
+            <p>The Great Animal Orchestra was an immersive audiovisual art experience created by Bernie Krause, United Visual Artists, and <i>Fondation Cartier pour l’art contemporain</i> that explores the natural world through sound. The West Coast premiere of this show took place at the Exploratorium in Summer 2023. The role of the 2D team was to amplify this experience with wall graphics and signage.</p>
+            <p>For the gallery walls, I reproduced infographics featured in the <i>Great Animal Orchestra</i> book, including accurate depictions of statistics in graphs and charts. Additionally, I created exhibit labels, wayfinding signage, and signage for auxiliary content.</p>
+            <p>I created over 20 add-on labels for the exhibit floor, which would be posted alongside existing exhibit labels. The finished exhibit labels invite interaction. After they were delivered by our vendor, exhibit developer Gaia and I attached them to the exhibits on the floor.</p>
+            <p>Unique labels with specific measurements and dielines required communication between myself, the exhibit developer, and our production vendor. A finished exhibit combines multiple labels to create an interactive station for social listening.</p>
+            <p>Auxiliary signage invited people to use their personal devices to interact with the content.</p>
+            <p>Further digital signage was created at later dates for a Members-Only special preview of the exhibition and public programming related to the exhibition.</p>
+            <div class="project-page-desc-end sticky">
+                <div class="credits-column">
+                    <div>
+                        <emphasis>
+                            <p>Organization</p>
+                        </emphasis>
+                        <p>Exploratorium</p>
+                    </div>
+                    <div>
+                        <emphasis>
+                            <p>Disciplines</p>
+                        </emphasis>
+                        <p>Exhibition design</p>
+                        <p>Wayfinding</p>
+                        <p>Exhibit labels</p>
+                        <p>Digital signage</p>
+                    </div>
+                </div>
+                <div class="credits-column">
+                    <div>
+                        <emphasis>
+                            <p>Project team</p>
+                        </emphasis>
+                        <p>Henni Yama</p>
+                        <p>Lutzka Zivny</p>
+                        <p>Keith Song</p>
+                        <p>Gaia Liu</p>
+                    </div>
+                    <div>
+                        <emphasis>
+                            <p>Year</p>
+                        </emphasis>
+                        <p>2023</p>
+                    </div>
+                </div>
 
-		<!-- Description -->
-	<div class="project-about">
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">Context</h3>
-			    <p><a href="https://www.exploratorium.edu/TGAO" target="_blank">The Great Animal Orchestra &#8599;</a> was an immersive audiovisual art experience created by Bernie Krause, United Visual Artists, and <i>Fondation Cartier pour l’art contemporain</i> that explores the natural world through sound. The West Coast premiere of this show took place at the Exploratorium in Summer 2023. The role of the 2D team was to amplify this experience with wall graphics and signage.</p>
-			</div>
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">Role</h3>
-			    <p>For the gallery walls, I reproduced infographics featured in the <i>Great Animal Orchestra</i> book, including accurate depictions of statistics in graphs and charts. Additionally, I created exhibit labels, wayfinding signage, and signage for auxilliary content.</p>
-			</div>
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">Team</h3>
-			    <p>2D Design Team Lead: Henni Yama. 2D Designers: Lutzka Zivny, Keith Song, Maj Jenkins. Exhibit Developer: Gaia Liu.</p>
-			</div>
-			<br>
-	</div> <!-- Project about div -->
+            </div>
+        </aside>
 
+        <main>
+            <img src="../img/projects/gao/GAO_2.jpg" alt="image">
+            <img src="../img/projects/gao/GAO_5.jpg" alt="image">
+            <img src="../img/projects/gao/GAO_6.jpg" alt="image">
+            <img src="../img/projects/gao/GAO_7.jpg" alt="image">
+            <img src="../img/projects/gao/GAO_8.jpg" alt="image">
+            
+            <img src="../img/projects/gao/SoundSafari_1.jpg" alt="image">
+            
+            <img src="../img/projects/gao/GAO_Labels_4.jpg" alt="image">
+            <img src="../img/projects/gao/NameThatSoundscape_1.jpg" alt="image">
+            <img src="../img/projects/gao/NameThatSoundscape_2.jpg" alt="image">
+            <img src="../img/projects/gao/GAO_Labels_3.jpg" alt="image">
+            
+            <img src="../img/projects/gao/GAO_Labels_1.jpg" alt="image">
+            <img src="../img/projects/gao/GAO_Labels_2.jpg" alt="image">
+            <img src="../img/projects/gao/GAO_Labels_5.jpg" alt="image">
+            <img src="../img/projects/gao/ShapeTheSoundscape_1.jpg" alt="image">
+            <img src="../img/projects/gao/ShapeTheSoundscape_2.jpg" alt="image">
+            
+            <img src="../img/projects/gao/GAO_Signage_EV_1.jpg" alt="image">
+            <img src="../img/projects/gao/GAO_Signage_EV_2.jpg" alt="image">
+            
+            
+        <!--   Vimeo Example-->
+            
+<!--
+            Steps to adding vimeo link:
+            1. Add div class="vimeo" to div
+            2. Add "?autoplay=1&loop=1&autopause=0&background=1" after the later digit of the player.vimeo.com link
+-->
+            
+            
+        </main>
 
-<!-- Specific photos -->
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/SoundSafari_1.jpg">
-				<p class="project-photo-caption">Auxilliary signage, such as this lolly, invite people to use their personal devices to interact with the content.</p>
-		</div>
-	</div>
+    </div>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/GAO_Labels_1.jpg">
-				<p class="project-photo-caption">I created over 20 add-on labels for the exhibit floor, which would be posted alongside existing exhibit labels.</p>
-		</div>
-	</div>
+    <!--    Footer  -->
+    <footer>
+        <a href="../index.html">
+            <p>See all projects&nbsp;&#8594;</p>
+        </a>
+        <div class="socials">
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/majcenean" target="_blank">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.instagram.com/majcenean/" target="_blank">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://vimeo.com/majcenean" target="_blank">
+                    <p>Vimeo</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://github.com/majcenean" target="_blank">
+                    <p>Github</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/GAO_Labels_2.jpg">
-				<p class="project-photo-caption">After they were delivered by our vendor, the exhibit developer and I attached them to the exhibits on the floor.</p>
-		</div>
-	</div>
+    <!--    Scripts-->
+    <!-- Image slideshow -->
+    <script src="../js/imageSlideshow.js"></script>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/GAO_Labels_4.jpg">
-				<p class="project-photo-caption">Unique labels with specific measurements and dielines required communication between myself, the exhibit developer, and our production vendor.</p>
-		</div>
-	</div>
+    <!-- Fade-in animation -->
+    <script src="../js/scrolls.min.js"></script>
 
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/NameThatSoundscape_1.jpg">
-				<p class="project-photo-caption">The finished exhibit combines multiple labels to create an interactive station for social listening.</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/NameThatSoundscape_2.jpg">
-				<p class="project-photo-caption"></p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/GAO_Labels_3.jpg">
-				<p class="project-photo-caption">I created a use drawing for one of the exhibits.</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/ShapeTheSoundscape_1.jpg">
-				<p class="project-photo-caption">The finished exhibit label invites interaction.</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/ShapeTheSoundscape_2.jpg">
-				<p class="project-photo-caption">After cleaning the drawing up in Photoshop, the polished drawing suggests an intended use of the exhibit.</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/GAO_Signage_EV_1.jpg">
-				<p class="project-photo-caption">Further digital signage was created later for a Members-Only special preview of the exhibit.</p>
-		</div>
-	</div>
-
-	<div class="project-about">
-		<div class="project-section">
-				<img class="project-photo" src="../img/projects/gao/GAO_Signage_EV_2.jpg">
-				<p class="project-photo-caption">More signage was created for public programming related to the exhibit.</p>
-		</div>
-	</div>
-
-	</div> <!-- Project div -->
-
-	<footer style="top: 20%">
-		<div id="footerhead">
-			<h1>Looking for more?</h1>
-			<div id="footersuggest">
-				<a href="../index.html" class="footerlink"><h3>Back to Home</h3></a>
-			</div>
-		</div>
-		<div id="socials">
-			<a href="https://www.linkedin.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/linkedin.png"></a>
-			<a href="https://vimeo.com/majcenean" target="_blank" class="sociallink"><img src="../img/social/vimeo.png"></a>
-			<a href="https://github.com/majcenean" target="_blank" class="sociallink"><img src="../img/social/github.png"></a>
-			<a href="https://www.instagram.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/insta.png"></a>
-			<a href="https://www.x.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/twitter.png"></a>
-		</div>
-	</footer>
-
-
-	<!-- Image slideshow -->
-	<script src="../js/imageSlideshow.js"></script>
-
-	<!-- Fade-in animation -->
-	<script src="../js/scrolls.min.js"></script>
-
-  </body>
+</body>
 
 </html>

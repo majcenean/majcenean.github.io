@@ -1,98 +1,164 @@
-
 <!DOCTYPE html>
-<html lang="">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maj Jenkins ✹ Design</title>
+    <title>Maj Jenkins ✹ Project</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/favicon.ico" />
-	</head>
+</head>
 
-	<body>
+<!--    Set up localhost with this command: -->
+<!--    py -m http.server   -->
 
-<!-- Navigation Bar -->
-	<nav style="justify-content: space-between">
-		<a href="../index.html"><span id="navhome"><h1>Maj Jenkins</h1></span></a>
-		<div id="navwrapper">
-			<a href="../about.html"><p>About</p></a>
-			<a href="../resume.html"><p>Résumé</p></a>
-		</div>
-	</nav>
+<body>
 
-	<!-- Title -->
-	<div id="project-title" class="project-desc">
-    <div class="projecttext">
-			<h1>Dead Type</h1>
-			<div class="projectdetails">
-				<h6>2019</h6>
-				<h6>Typographic Posters</h6>
-			</div>
-		</div>
-	</div>
+    <!--    Navigation  -->
+    <nav>
+        <a href="../index.html">
+            <div class="site-logo"></div>
+        </a>
 
-<div class="container y scrollsnap appear" dir="ltr">
+        <a href="../about.html">
+            <p>Contact</p>
+        </a>
+    </nav>
 
-<!-- Image Slider -->
-	<div class="slideshow-container">
-      <div class="mySlides fade" style="background-image: url(../img/projects/deadtype/posters_mockup.png);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/deadtype/poster1_mockup.png);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/deadtype/poster2_mockup.png);"></div>
-      <div class="mySlides fade" style="background-image: url(../img/projects/deadtype/poster3_mockup.png);"></div>
-      
-      <a class="prev" onclick="plusSlides(-1)"><p>&#129104;</p></a>
-      <a class="next" onclick="plusSlides(1)"><p>&#129106;</p></a>
+    <!--    Title and Description  -->
+    <div class="project-page-grid">
+        <div class="project-page-title">
+            <h2>Dead Type</h2>
+            <p>Typographic Exploration, 2019</p>
+        </div>
+        <div class="project-page-description">
+            <p>Explorations of historical typefaces from separate categories of type and periods of history.</p>
+        </div>
 
-      <div class="dot_container">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-    	</div>
-		</div>	<!-- Slideshow container div -->
-</div> <!-- Container div -->
+        <!--    Hero Image or Slideshow  -->
+        <div class="project-page-hero-image">
+            <div class="slideshow-container">
 
-<!-- Text -->
-  <div class="project-desc" style="margin-top: 0;">
+                
+                <!--Images-->
+                <img class="mySlides" src="../img/projects/deadtype/posters_mockup.png">
 
-		<br>
+                <!--Buttons-->
+<!--
+                <a class="prev" onclick="plusSlides(-1)">
+                    <p>&#129104;</p>
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    <p>&#129106;</p>
+                </a>
+-->
 
-		<!-- Description -->
-		<div class="project-about">
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">concept</h3>
-			    <p>These three posters are explorations of historical typefaces from separate categories of type and periods of history. This project involved research into the development of European type throughout the centuries and the historical context in which they arose. They are intended to be an investigation into how the past sensibilities of design correspond with the sensibilities of present.</p>
-			</div>
-			<div class="project-section">
-			    <h3 scrolls scrolls-anim="fade-left" scrolls-easing="ease-out">takeaways</h3>
-			    <p>The process was an exploration of negative space and typography.</p>
-			</div>
-			<br>
-		</div> <!-- Project about div -->
-	</div> <!-- Project div -->
+                <!--Dots-->
+<!--
+                <div class="dot_container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+-->
 
-	<footer style="top: 20%">
-		<div id="footerhead">
-			<h1>Looking for more?</h1>
-			<div id="footersuggest">
-				<a href="../index.html" class="footerlink"><h3>Back to Home</h3></a>
-			</div>
-		</div>
-		<div id="socials">
-			<a href="https://www.linkedin.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/linkedin.png"></a>
-			<a href="https://vimeo.com/majcenean" target="_blank" class="sociallink"><img src="../img/social/vimeo.png"></a>
-			<a href="https://github.com/majcenean" target="_blank" class="sociallink"><img src="../img/social/github.png"></a>
-			<a href="https://www.instagram.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/insta.png"></a>
-			<a href="https://www.x.com/majcenean/" target="_blank" class="sociallink"><img src="../img/social/twitter.png"></a>
-		</div>
-	</footer>
+            </div> <!-- End of slideshow div -->
+        </div><!-- End of hero div -->
+    </div>
 
-	<!-- Image slideshow -->
-	<script src="../js/imageSlideshow.js"></script>
+    <!--    Navivation Bar Ribbon at Bottom of Page-->
+    <div class="fixedbottom">
+        <div>
+            <a href="previous_project">
+                <div class="nextprev">
+                    <p>&#8592;</p>
+                </div>
+            </a>
+            <p>Dead Type</p>
+            <a href="next_project">
+                <div class="nextprev">
+                    <p>&#8594;</p>
+                </div>
+            </a>
+        </div>
+    </div>
 
-	<!-- Fade-in animation -->
-	<script src="../js/scrolls.min.js"></script>
+    <!--    Main Content: Text and Images -->
+    <div class="project-content-container">
+        <aside>
+            <p>The process was an exploration of negative space and typography.</p>
+            <p>These three posters are explorations of historical typefaces from separate categories of type and periods of history. This project involved research into the development of European type throughout the centuries and the historical context in which they arose. They are intended to be an investigation into how the past sensibilities of design correspond with the sensibilities of the present.</p>
+            <div class="project-page-desc-end sticky">
+                <div class="credits-column">
+                    <div>
+                        <emphasis>
+                            <p>Class</p>
+                        </emphasis>
+                        <p>Typography</p>
+                    </div>
+                    <div>
+                        <emphasis>
+                            <p>Disciplines</p>
+                        </emphasis>
+                        <p>Letterform</p>
+                    </div>
+                </div>
+                <div class="credits-column">
+                    <div>
+                        <emphasis>
+                            <p>Year</p>
+                        </emphasis>
+                        <p>2019</p>
+                    </div>
+                </div>
 
-  </body>
+            </div>
+        </aside>
+
+        <main>
+            <img src="../img/projects/deadtype/poster1_mockup.png" alt="poster 1">
+            <img src="../img/projects/deadtype/poster2_mockup.png" alt="poster 2">
+            <img src="../img/projects/deadtype/poster3_mockup.png" alt="poster 3">
+        </main>
+
+    </div>
+
+    <!--    Footer  -->
+    <footer>
+        <a href="../index.html">
+            <p>See all projects&nbsp;&#8594;</p>
+        </a>
+        <div class="socials">
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/majcenean" target="_blank">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.instagram.com/majcenean/" target="_blank">
+                    <p>Instagram</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://vimeo.com/majcenean" target="_blank">
+                    <p>Vimeo</p>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://github.com/majcenean" target="_blank">
+                    <p>Github</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--    Scripts-->
+    <!-- Image slideshow -->
+    <script src="../js/imageSlideshow.js"></script>
+
+    <!-- Fade-in animation -->
+    <script src="../js/scrolls.min.js"></script>
+
+</body>
 
 </html>
